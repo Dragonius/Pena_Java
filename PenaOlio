@@ -3,6 +3,14 @@ public class PenaOlio {
     private int rahat;
     private int eeppisyys;
     private int aika;
+    
+    public PenaOlio(){
+        rahat = 1000;
+        eeppisyys = 0;
+        aika = 0;
+    }
+    
+    
 
     public int getRahat() {
         return rahat;
