@@ -21,10 +21,22 @@ public class PenaSuomi {
                 + "9. Teen rikoksen. \n"
                 + "10. Otan lainan (+ 500e). \n"
                 + "11. Näytä rahatilanne.";
+        
         String baarimenu = "Millaiseen baariin haluat mennä? \n"
                 + "1. Karaoke-baari \n"
                 + "2. Perus pubi \n"
                 + "3. Yökerho \n";
+        
+        String keilamenu = "Kaverisi ehdottavat viidenkympin vedonlyöntiä keilaillasta. Suostutko?\n"
+                + "1. Suostun\n"
+                + "2. En suostu";
+        
+        String kotimenu = "Mitä teet koti-iltana?\n"
+                + "1. Netflix and chill\n"
+                + "2. Pelaan videopelejä\n"
+                + "3. Siivoan ja tiskaan \n"
+                + "4. Luen kirjaa \n";
+                
         int valinta;
         String lukuStr;
                 
