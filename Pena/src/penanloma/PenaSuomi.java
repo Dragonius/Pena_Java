@@ -6,7 +6,7 @@ public class PenaSuomi {
     private PenaOlio pena;
     
     public void suomiAlku(){
-        PenaOlio pena = new PenaOlio();
+        PenaOlio penaoo = new PenaOlio();
         int rahat = pena.getRahat();
 
         String suomiMenuAlku = "Olet päättänyt jäädä Suomeen. \n"
