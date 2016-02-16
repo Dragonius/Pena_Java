@@ -36,6 +36,36 @@ public class PenaSuomi {
                 + "2. Pelaan videopelejä\n"
                 + "3. Siivoan ja tiskaan \n"
                 + "4. Luen kirjaa \n";
+        
+        String ulkosyömismenu = "Missä käyt syömässä?\n"
+                + "1. Pizzeria \n"
+                + "2. Hieno ravintola \n"
+                + "3. McDonald's \n"
+                + "4. Nakkigrilli \n";
+        
+        String urheilumenu = "Miten haluat urheilla? \n"
+                + "1. Käyn lenkillä \n"
+                + "2. Menen salille \n"
+                + "3. Menen pelaamaan jalkapalloa kavereiden kanssa";
+        
+        String viromenu = "Mitä teet risteilyllä?\n"
+                + "1. Ekana Tax Freehen ostamaan viinat, hytissä alottelua, sitten tanssimaan baariin ja iskemään naisia!\n"
+                + "2. Suoraan baariin juomaan loppuillaksi! \n"
+                + "3. Tax Freen kautta loppuillaksi hyttiin murjottamaan. \n"
+                + "4. Nukun vain hytissä. \n"
+                + "5. Kasinolla pitää käydä!";
+        
+        String hierontamenu = "Millaisen hierronnan otat? \n"
+                + "1. Thai-hierontaan ajattelin mennä \n"
+                + "2. Johonkin ihan perus kokovartalohierontaan \n"
+                + "3. Kaveri antaa niskahieronnan";
+        
+        String ostosmenu = "Mitäs lähdet ostelee? \n"
+                + "1. Vaatteita \n"
+                + "2. Ruokakaupassa käväsen \n"
+                + "3. Kirpputorille ajattelin mennä \n"
+                + "4. Satunnaisesti lähden käymään kaupoilla ja katson mitä tarttuu mukaan.";
+        
                 
         int valinta;
         String lukuStr;
