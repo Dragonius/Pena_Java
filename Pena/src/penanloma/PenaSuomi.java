@@ -6,9 +6,7 @@ public class PenaSuomi {
     private PenaOlio pena;
     
     public void suomiAlku(){
-        PenaOlio penaoo = new PenaOlio();
-        int rahat = pena.getRahat();
-
+        
         String suomiMenuAlku = "Olet päättänyt jäädä Suomeen. \n"
                 + "Kerroppa mitä haluat tehdä.\n \n 1. Lähden baariin. \n"
                 + "2. Lähden kavereiden kanssa keilaamaan. \n"
@@ -65,6 +63,13 @@ public class PenaSuomi {
                 + "2. Ruokakaupassa käväsen \n"
                 + "3. Kirpputorille ajattelin mennä \n"
                 + "4. Satunnaisesti lähden käymään kaupoilla ja katson mitä tarttuu mukaan.";
+        
+        String rikosmenu = "Millaisen rikoksen teet? \n"
+                + "1. Ryöstän Siwan \n"
+                + "2. Ryöstän pankin \n"
+                + "3. Teen palkkamurhan \n"
+                + "4. Murtaudun vanhuksen kotiin \n"
+                + "5. Pahoinpitelen ja ryöstän jonkun \n";
         
                 
         int valinta;
