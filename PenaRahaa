@@ -1,1 +1,12 @@
 #Penan Raha tilanne
+
+
+package Pena_Java;
+
+/**
+ *
+ * @author Jari
+ */
+public class PenaRahaa {
+    
+}
