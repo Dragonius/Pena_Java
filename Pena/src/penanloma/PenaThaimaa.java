@@ -21,7 +21,7 @@ public class PenaThaimaa {
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
                 +"Mieleni tekee olutta"
                 +"Palaan hotellille";
-        String Vuokra = ""
+        String Vuokra = "";
         int valinta;
         String lukuStr;
         
@@ -30,7 +30,6 @@ public class PenaThaimaa {
         
         // PENA HOTELLILLA TULOSTE KAIKISSA MUISTA MUUTTAA!!
             switch (valinta){
-
                 case 1: JOptionPane.showMessageDialog(null, "Olet hotellilla");
                     pena.otaRahaa(10);
                     break;
@@ -40,6 +39,8 @@ public class PenaThaimaa {
                 case 3: JOptionPane.showMessageDialog(null, "Olet hotellilla");
                     pena.lisääEeppisyyttä(2);
                     break;
+        }switch (valinta){
+            case 1: JOptionPane.showMessageDialog(null, valinnat);
         }
         
         
