@@ -72,7 +72,7 @@ public class PenaSuomi {
                 + "4. Murtaudun vanhuksen kotiin \n"
                 + "5. Pahoinpitelen ja ryöstän jonkun \n";
         
-                
+        int menuvalinta;      
         int valinta;
         String lukuStr;
         
@@ -83,43 +83,52 @@ public class PenaSuomi {
             valinta = Integer.parseInt(lukuStr);
             switch (valinta){
                 
-            case 1: 
+            case 1: lukuStr = JOptionPane.showInputDialog(baarimenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 2:
+            case 2: lukuStr = JOptionPane.showInputDialog(keilamenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 3:
+            case 3: lukuStr = JOptionPane.showInputDialog(kotimenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 4:
+            case 4: lukuStr = JOptionPane.showInputDialog(ulkosyömismenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 5:
+            case 5: lukuStr = JOptionPane.showInputDialog(urheilumenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 6:
+            case 6: lukuStr = JOptionPane.showInputDialog(viromenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 7:
+            case 7: lukuStr = JOptionPane.showInputDialog(hierontamenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 8:
+            case 8: lukuStr = JOptionPane.showInputDialog(ostosmenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 9:
+            case 9: lukuStr = JOptionPane.showInputDialog(rikosmenu);
+            menuvalinta = Integer.parseInt(lukuStr);
             
             break;
             
-            case 10:
+            case 10: penaO.otaLaina();
             
             break;
             
