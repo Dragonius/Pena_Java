@@ -6,6 +6,7 @@ public class PenaMain {
 
     public static void main(String[] args) {
         //Muuttujat
+        PenaKontrolleri kontrolleri = new PenaKontrolleri();
         String alkuTervehdys = "Hei Pena! Oletko valmis viettämään huikean loman? \n"
                 + "Sinulla on kymmenen päivää aikaa viettää mahdollisimman mahtava loma. \n"
                 + "Saat käyttörahaa alkuun 1000€, mutta voit ottaa kerran loman aikana\n "
