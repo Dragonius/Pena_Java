@@ -127,12 +127,12 @@ public class PenaSuomi {
             
             break;
             
-            default: 
+            default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
             
             }   
         
 
-        }while()
+        }while(penaO.getAika()<=10 && penaO.getRahat()>0);
         
         
     }
