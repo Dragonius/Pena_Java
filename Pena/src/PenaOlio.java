@@ -1,6 +1,4 @@
-package pena_java;
 
-//PenaOlio
 public class PenaOlio {
     private int rahat;
     private int eeppisyys;
