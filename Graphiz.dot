@@ -1,20 +1,24 @@
 digraph finite_state_machine {
 rankdir=Pena;
-node [shape = doublecircle]; 
-Pena; 
-Eeppisyys;
+node [shape = doublecircle]; Pena; Eeppisyys;
 node [shape = circle];
 	Pena -> Raha;
+	Pena -> Kotiin;
 	Pena -> Baariin;
 	Pena -> Matkalle;
+	Kotiin -> Leffa;
 	Raha -> Pena;
 	Raha -> Riittävyys;
+	lyo_Vetoa -> Raha_havia;
+	lyo_Vetoa -> Raha_voita;
+	Raha_havia -> Eeppisyys;
+	Raha_voita -> Eeppisyys;
 	Laina -> Riittävyys;
 	Matkalle -> Baariin;
 	Matkalle -> Eeppisyys;
 	Riittävyys -> Baariin;
 	Riittävyys -> Thaimaa;
-	Thaimaa -> Eeppisyys;
 	Baariin -> Eeppisyys;
-
+	Thaimaa -> Baariin;
+	Thaimaa -> Eeppisyys;
 }
