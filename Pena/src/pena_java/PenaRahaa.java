@@ -1,7 +1,7 @@
 
 
 
-package pena;
+package pena_java;
 
 //Penan Raha tilanne
 
