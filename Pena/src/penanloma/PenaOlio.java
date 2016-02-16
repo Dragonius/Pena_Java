@@ -1,3 +1,5 @@
+package penanloma;
+
 
 public class PenaOlio {
     private int rahat;
