@@ -17,10 +17,10 @@ public class PenaThaimaa {
         
         lukuStr = JOptionPane.showInputDialog(thaimaaMenu);
         valinta = Integer.parseInt(lukuStr);
-        
+        String taksin_hotellille = "Tilaat taksin ja jatkat matkaa taksilla hotelille\n";
         
             switch (valinta){
-                case 1: JOptionPane.showMessageDialog(null, pena);
+                case 1: JOptionPane.showMessageDialog(null,taksin_hotellille);
                     break;
                 case 2: JOptionPane.showMessageDialog(null, pena);
                     break;
