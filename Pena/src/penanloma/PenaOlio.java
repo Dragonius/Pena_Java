@@ -2,12 +2,13 @@ package penanloma;
 
 import javax.swing.JOptionPane;
 
-
+//private int Penaolio
 public class PenaOlio {
     private int rahat;
     private int eeppisyys;
     private int aika;
     
+    // luo pena olio ja määritä rahat sekä aika että eeppisyys
     public PenaOlio(){
         rahat = 1000;
         eeppisyys = 0;
@@ -15,7 +16,7 @@ public class PenaOlio {
     }
     
     
-
+//get ja set asetuksia
     public int getRahat() {
         return rahat;
     }
