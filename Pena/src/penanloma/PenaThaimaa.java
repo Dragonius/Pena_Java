@@ -16,7 +16,8 @@ public class PenaThaimaa {
         String valinnat = "Olet hotellilla, Hotellin katolla on uima-allas ja ulkona paistaa aurinko mitä haluat tehdä seuraavaksi?\n"
                 +"1. Suuntaan altaalle! "
                 +"2. Tutustun alueeseen!"
-                +"4. Vuokraan kulkuvälineen";
+                +"3. Vuokraan kulkuvälineen";
+                // muutin yllä olevan 4:n 3:ksi -jari
         String allas = "Saavut altaalle...";
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
                 +"Mieleni tekee olutta"
@@ -39,8 +40,15 @@ public class PenaThaimaa {
                 case 3: JOptionPane.showMessageDialog(null, "Olet hotellilla");
                     pena.lisääEeppisyyttä(2);
                     break;
-        }switch (valinta){
+        }
+        //Olet Nyt hotelilla ja alat tehdä MITÄ? -jari
+        switch (valinta){
             case 1: JOptionPane.showMessageDialog(null, valinnat);
+            break;
+            case 2: JOptionPane.showMessageDialog(null, valinnat);
+            break;
+            case 3: JOptionPane.showMessageDialog(null, valinnat);
+            break;
         }
         
         
