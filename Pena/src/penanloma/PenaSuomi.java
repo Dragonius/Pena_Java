@@ -71,7 +71,7 @@ public class PenaSuomi {
                 + "3. Teen palkkamurhan \n"
                 + "4. Murtaudun vanhuksen kotiin \n"
                 + "5. Pahoinpitelen ja ryöstän jonkun \n";
-        
+//luo menun int valinat ja Stringi 
         int menuvalinta;      
         int valinta;
         String lukuStr;
@@ -141,7 +141,9 @@ public class PenaSuomi {
             }   
         
 
-        }while(penaO.getAika()<=10 && penaO.getRahat()>0);
+        }
+        // niin kauan kuin penan aika on vähemmän kuin 10 ja raha on enemän kuin 0
+        while(penaO.getAika()<=10 && penaO.getRahat()>0);
         
         
     }
