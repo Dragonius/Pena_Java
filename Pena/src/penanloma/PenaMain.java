@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class PenaMain {
 
     public static void main(String[] args) {
-        //Muuttujat
+        //Muuttujat Ja alkuteksti
         PenaKontrolleri kontrolleri = new PenaKontrolleri();
         String alkuTervehdys = "Hei Pena! Oletko valmis viettämään huikean loman? \n"
                 + "Sinulla on kymmenen päivää aikaa viettää mahdollisimman mahtava loma. \n"
@@ -22,7 +22,7 @@ public class PenaMain {
         //TEMPUT
         
         //OUTPUT
-        
+        //Loppu tulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
     }
 
 }
