@@ -40,6 +40,7 @@ public class PenaOlio {
     public void setAika(int aika) {
         this.aika = aika;
     }
+    // Rahan toiminta olio
     public int otaRahaa(int maksu){
         int palautus;
         if (maksu <= rahat) {
@@ -51,6 +52,7 @@ public class PenaOlio {
         }
         return palautus;
     }
+    //puutuu että onko laina otettu vai ei.
     public int otaLaina(){
         int palautus;
         rahat = rahat + 500;
