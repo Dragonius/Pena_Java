@@ -18,7 +18,6 @@ public class PenaSuomiMetodit {
             penaO.lisääEeppisyyttä(6 + (int) (Math.random()*4));
             penaO.lisääAika(1);
             JOptionPane.showMessageDialog(null, "Oikein mukava karaokeilta vietetty!");
-                JOptionPane.showMessageDialog(null, penaO.getRahat());
             break;
             case 2: penaO.otaRahaa(40);
             penaO.lisääEeppisyyttä(3 + (int) (Math.random()*7));
