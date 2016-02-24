@@ -5,8 +5,8 @@ public class PenaThaimaa {
     
     private PenaOlio pena; 
     
-    public void thaimaaAlku(){
-        PenaOlio pena = new PenaOlio();
+    public void thaimaaAlku(PenaOlio penaO){
+        
         String thaimaaMenu = "Matka Thaimaahan alkakoon! \n"
         +"Uuvuttavan 14h lennon jälkeen saavut Bangkokin lentokentälle nyt saat valita mitä tehdään\n"
         +"1. Otan taksin hotellille\n"
@@ -35,7 +35,7 @@ public class PenaThaimaa {
                 +"3. Ostan jotain purtavaa "
                 +"4. Palaan hotellille";
         
-        String Vuokra = "Päätät vuokrata kulkuvälineen:\n"
+        String vuokra = "Päätät vuokrata kulkuvälineen:\n"
                 +"1. Vuokraan skootterin! "
                 +"2. Vuokraan Pyörän!"
                 +"3. Vuokraan mönkijän! ";
@@ -109,39 +109,39 @@ public class PenaThaimaa {
         switch (valinta){
             
         
-            case 1: JOptionPane.showMessageDialog(allas);
+            case 1: JOptionPane.showMessageDialog(null, allas);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 2: JOptionPane.showMessageDialog(alue);
+            case 2: JOptionPane.showMessageDialog(null, alue);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 3: JOptionPane.showMessageDialog(vuokra);
+            case 3: JOptionPane.showMessageDialog(null, vuokra);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 4: JOptionPane.showMessageDialog(ruoka);
+            case 4: JOptionPane.showMessageDialog(null, ruoka);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 5: JOptionPane.showMessageDialog(hieronta);
+            case 5: JOptionPane.showMessageDialog(null, hieronta);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 6: JOptionPane.showMessageDialog(kuntosali);
+            case 6: JOptionPane.showMessageDialog(null, kuntosali);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 7: JOptionPane.showMessageDialog(yöelämä);
+            case 7: JOptionPane.showMessageDialog(null, yöelämä);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 8: JOptionPane.showMessageDialog(retki);
+            case 8: JOptionPane.showMessageDialog(null, retki);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
-            case 9: JOptionPane.showMessageDialog(seuralainen);
+            case 9: JOptionPane.showMessageDialog(null, seuralainen);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
             
@@ -153,6 +153,16 @@ public class PenaThaimaa {
             
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
         }
+        }
+      // niin kauan kuin penan aika on vähemmän kuin 10 ja raha on enemän kuin 0
+        while(penaO.getAika()<=10 && penaO.getRahat()>0);
+        
+        
+    }
+}
+
+      
+        
         
 
         
