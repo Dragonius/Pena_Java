@@ -6,6 +6,7 @@ public class PenaSuomi {
     private PenaOlio pena;
     
     public void suomiAlku(){
+        PenaSuomiMetodit metodit = new PenaSuomiMetodit();
         PenaOlio penaO = new PenaOlio();
         String suomiMenuAlku = "Olet päättänyt jäädä Suomeen. \n"
                 + "Lomasi on kestänyt "+penaO.getAika()+" päivää\n"
@@ -71,7 +72,7 @@ public class PenaSuomi {
                 + "3. Teen palkkamurhan \n"
                 + "4. Murtaudun vanhuksen kotiin \n"
                 + "5. Pahoinpitelen ja ryöstän jonkun \n";
-//luo menun int valinat ja Stringi 
+//luo menun int valinnat ja Stringi 
         int menuvalinta;      
         int valinta;
         String lukuStr;
@@ -85,6 +86,11 @@ public class PenaSuomi {
                 
             case 1: lukuStr = JOptionPane.showInputDialog(baarimenu);
             menuvalinta = Integer.parseInt(lukuStr);
+//             + "1. Karaoke-baari \n"
+//                + "2. Perus pubi \n"
+//                + "3. Yökerho \n";
+            metodit.baari(menuvalinta);
+            
             
             break;
             
