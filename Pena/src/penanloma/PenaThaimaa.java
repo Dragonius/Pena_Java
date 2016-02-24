@@ -20,15 +20,15 @@ public class PenaThaimaa {
                 +"3. Pelaat altaalla pelejä ja löydät uusia kavereita!";
         
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
-                +"1. Mieleni tekee olutta"
-                +"2. Päätän lähteä shoppailemaan"
-                +"3. Ostan jotain purtavaa "
-                +"4. Palaan hotellille";
+                +"1. Mieleni tekee olutta \n"
+                +"2. Päätän lähteä shoppailemaan \n"
+                +"3. Ostan jotain purtavaa \n"
+                +"4. Palaan hotellille \n";
         
         String vuokra = "Päätät vuokrata kulkuvälineen:\n"
-                +"1. Vuokraan skootterin! "
-                +"2. Vuokraan Pyörän!"
-                +"3. Vuokraan mönkijän! ";
+                +"1. Vuokraan skootterin! \n"
+                +"2. Vuokraan Pyörän! \n"
+                +"3. Vuokraan mönkijän! \n";
         
         String ruoka = "Päätät lähteä syömään, missä haluat käydä syömässä? \n"
                 +"1. McDonald's \n"
@@ -55,9 +55,9 @@ public class PenaThaimaa {
                 +"3. Lähdet Strippi klubille! \n"
                 +"4. Päädyt rentoon baariin jossa viihdyt loppuillan! \n";
         
-        String retki = "Päätit lähteä retkelle ja pois Bagkokin melusta! \n"
+        String retki = "Päätit lähteä retkelle! \n"
                 +"1. Päätän lähteä kiertelemään museoita. \n"
-                +"2. Showtime! Päätät käydä katsomassa calypso cabareen (tunnettu ladyboyshow)."
+                +"2. Showtime! Päätät käydä katsomassa calypso cabareen(tunnettu ladyboyshow).\n"
                 +"3. Päätän lähteä katsomaan thainyrkkeilyiltaa. \n"
                 +"4. Lähdet illallisristeilylle Chao Phraya joelle! \n"
                 +"5. Lähdet veneristeilylle. \n"
