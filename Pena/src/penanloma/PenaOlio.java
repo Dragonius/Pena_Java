@@ -7,12 +7,14 @@ public class PenaOlio {
     private int rahat;
     private int eeppisyys;
     private int aika;
+    private int laina;
     
     // luo pena olio ja määritä rahat sekä aika että eeppisyys
     public PenaOlio(){
         rahat = 1000;
         eeppisyys = 0;
         aika = 0;
+        laina = 0;
     }
     
     
@@ -55,8 +57,15 @@ public class PenaOlio {
     //puutuu että onko laina otettu vai ei.
     public int otaLaina(){
         int palautus;
+        if (laina==0) {
         rahat = rahat + 500;
-        palautus = rahat;
+        laina = 1;
+        palautus = rahat;  
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "Olet jo ottanut lainasi!");
+            palautus = 0;
+        }
         return palautus;
     }
     public int lisääAika(int päivä){
