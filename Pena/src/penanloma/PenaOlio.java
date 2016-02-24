@@ -54,6 +54,12 @@ public class PenaOlio {
         }
         return palautus;
     }
+    public int lisääRahaa(int summa){
+        int palautus;
+        rahat = rahat + summa;
+        palautus = rahat;
+        return palautus;
+    }
     //puutuu että onko laina otettu vai ei.
     public int otaLaina(){
         int palautus;
