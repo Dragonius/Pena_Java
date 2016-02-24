@@ -14,11 +14,14 @@ public class PenaThaimaa {
         +"3. Liftaan hotellille\n";
         
         String valinnat = "Olet hotellilla, Hotellin katolla on uima-allas ja ulkona paistaa aurinko mitä haluat tehdä seuraavaksi?\n"
-                +"1. Suuntaan altaalle! "
-                +"2. Tutustun alueeseen! "
-                +"3. Vuokraan kulkuvälineen! "
-                +"4. Lähden syömään! "
-                +"5. Lähden hierontaan! ";
+                +"1. Suuntaan altaalle! \n"
+                +"2. Tutustun alueeseen! \n"
+                +"3. Vuokraan kulkuvälineen! \n "
+                +"4. Lähden syömään! \n"
+                +"5. Lähden hierontaan! \n "
+                +"6. Lähden kuntosalille! \n "
+                +"7. "
+                +"10. Otan lainan (+ 500€). \n ";
                 // muutin yllä olevan 4:n 3:ksi -jari
         String allas = "Saavut altaalle...";
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
@@ -30,6 +33,11 @@ public class PenaThaimaa {
                 +"1. Vuokraat skootterin! "
                 +"2. Vuokraat Pyörän!"
                 +"3. Vuokraat mönkijän! ";
+        String ruoka = "Päätät lähteä syömään, missä käyt syömässä? \n"
+                +"1. McDonald's \n"
+                +"2. Hieno ravintola (5* illallinen) \n"
+                +"3. Ostan ruokaa katukojusta \n"
+                +"4. Käyt syömässä perinteisen thaimaalaisen menun. \n";
         int valinta;
         String lukuStr;
         
