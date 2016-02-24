@@ -1,7 +1,7 @@
 //Testausta
 package penanloma;
 
-
+//luodaan pena kontrolleri ja sen alle omat kontroloitavat oliot.
 public class PenaKontrolleri {
     private PenaSuomi suomiloma;
     private PenaThaimaa thaimaaloma;
