@@ -9,20 +9,7 @@ public class PenaSuomi {
     public void suomiAlku(PenaOlio penaO){
         PenaSuomiMetodit metodit = new PenaSuomiMetodit();
         PenaKontrolleri kontrolleri = new PenaKontrolleri();
-        int aika = penaO.getAika();
-        String suomiMenuAlku = "Olet päättänyt jäädä Suomeen. \n"
-                + "Lomasi on kestänyt "+aika+" päivää\n"
-                + "Kerroppa mitä haluat tehdä.\n \n 1. Lähden baariin. \n"
-                + "2. Lähden kavereiden kanssa keilaamaan. \n"
-                + "3. Vietän koti-illan. \n"
-                + "4. Käyn ulkona syömässä. \n"
-                + "5. Käyn urheilemassa.  \n"
-                + "6. Lähden risteilylle Viron laivalle. \n"
-                + "7. Käyn hieronnassa. \n"
-                + "8. Käyn ostoksilla. \n"
-                + "9. Teen rikoksen. \n"
-                + "10. Otan lainan (+ 500e). \n"
-                + "11. Näytä rahatilanne.";
+        
         
         String baarimenu = "Millaiseen baariin haluat mennä? \n"
                 + "1. Karaoke-baari \n"
@@ -82,7 +69,19 @@ public class PenaSuomi {
         
         do {        
 
-            lukuStr = JOptionPane.showInputDialog(suomiMenuAlku);
+            lukuStr = JOptionPane.showInputDialog("Olet päättänyt jäädä Suomeen. \n"
+                + "Lomasi on kestänyt "+penaO.getAika()+" päivää\n"
+                + "Kerroppa mitä haluat tehdä.\n \n 1. Lähden baariin. \n"
+                + "2. Lähden kavereiden kanssa keilaamaan. \n"
+                + "3. Vietän koti-illan. \n"
+                + "4. Käyn ulkona syömässä. \n"
+                + "5. Käyn urheilemassa.  \n"
+                + "6. Lähden risteilylle Viron laivalle. \n"
+                + "7. Käyn hieronnassa. \n"
+                + "8. Käyn ostoksilla. \n"
+                + "9. Teen rikoksen. \n"
+                + "10. Otan lainan (+ 500e). \n"
+                + "11. Näytä rahatilanne.");
             valinta = Integer.parseInt(lukuStr);
             switch (valinta){
                 
