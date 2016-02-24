@@ -134,7 +134,7 @@ public class PenaSuomiMetodit {
             }
             penaO.lisääAika(1);
             break;
-            case 3: pena.otaRahaa(10);
+            case 3: penaO.otaRahaa(10);
             random = (1 +(int) (Math.random()*3));
             if (random == 2){
                 penaO.vähennäEeppisyyttä(10);
@@ -146,7 +146,7 @@ public class PenaSuomiMetodit {
             }
             penaO.lisääAika(1);
             break;
-            case 4: pena.otaRahaa(8);
+            case 4: penaO.otaRahaa(8);
             random = (1 +(int) (Math.random()*3));
             if (random == 2){
                 penaO.vähennäEeppisyyttä(5);
