@@ -155,11 +155,45 @@ public class PenaSuomiMetodit {
                 penaO.lisääEeppisyyttä(3);
                 JOptionPane.showMessageDialog(null, "Söit nakkikiskalla. Ihan kohtuullista safkaa.");
             }
+            penaO.lisääAika(1);
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
             }
                 
             }
+    public void urheilu(int valinta, PenaOlio penaO){
+        int random;
+//        "Miten haluat urheilla? \n"
+//                + "1. Käyn lenkillä \n"
+//                + "2. Menen salille \n"
+//                + "3. Menen pelaamaan jalkapalloa kavereiden kanssa";
+        switch (valinta){
+            case 1: random = (1 + (int) (Math.random()*9));
+            if (random ==4){
+                penaO.vähennäEeppisyyttä(4);
+                JOptionPane.showMessageDialog(null, "Revyäytit nilkkasi lenkillä. Aijai!");
+            }else{
+                penaO.lisääEeppisyyttä(5);
+            }
+            penaO.lisääAika(1);
+                break;
+            case 2: random = (1 + (int) (Math.random()*9));
+            if (random ==4){
+                penaO.vähennäEeppisyyttä(4);
+                JOptionPane.showMessageDialog(null, "Revyäytit nilkkasi salilla. Aijai!");
+            }else{
+                penaO.lisääEeppisyyttä(6);
+            }
+                break;
+            case 3: random = (1 + (int) (Math.random()*5));
+            if (random == 6){
+                penaO.lisääEeppisyyttä(4);
+                JOptionPane.showMessageDialog(null, "Satutit jalkasi pelatessa, mutta hauskaa oli!");
+            }else{
+                penaO.lisääEeppisyyttä(8);
+                
+            }
+             penaO.lisääAika(1);
+            default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
         }
-    
-
-
+    }
+        }
