@@ -4,12 +4,14 @@ import javax.swing.JOptionPane;
 public class PenaSuomi {
     
     private PenaOlio pena;
+    private PenaSuomiMetodit suomiMetodit;
     
-    public void suomiAlku(){
+    public void suomiAlku(PenaOlio penaO){
         PenaSuomiMetodit metodit = new PenaSuomiMetodit();
-        PenaOlio penaO = new PenaOlio();
+        PenaKontrolleri kontrolleri = new PenaKontrolleri();
+        int aika = penaO.getAika();
         String suomiMenuAlku = "Olet päättänyt jäädä Suomeen. \n"
-                + "Lomasi on kestänyt "+penaO.getAika()+" päivää\n"
+                + "Lomasi on kestänyt "+aika+" päivää\n"
                 + "Kerroppa mitä haluat tehdä.\n \n 1. Lähden baariin. \n"
                 + "2. Lähden kavereiden kanssa keilaamaan. \n"
                 + "3. Vietän koti-illan. \n"
@@ -73,9 +75,9 @@ public class PenaSuomi {
                 + "4. Murtaudun vanhuksen kotiin \n"
                 + "5. Pahoinpitelen ja ryöstän jonkun \n";
 //luo menun int valinnat ja Stringi 
-        int menuvalinta;      
-        int valinta;
-        String lukuStr;
+        int menuvalinta = 0;      
+        int valinta = 0;
+        String lukuStr = "";
         
         
         do {        
@@ -86,14 +88,14 @@ public class PenaSuomi {
                 
             case 1: lukuStr = JOptionPane.showInputDialog(baarimenu);
             menuvalinta = Integer.parseInt(lukuStr);
-            metodit.baari(menuvalinta);
+            metodit.baari(menuvalinta, penaO);
             
             
             break;
             
             case 2: lukuStr = JOptionPane.showInputDialog(keilamenu);
             menuvalinta = Integer.parseInt(lukuStr);
-            metodit.keilaus(menuvalinta);
+            metodit.keilaus(menuvalinta, penaO);
             
             break;
             
