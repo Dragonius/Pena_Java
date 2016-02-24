@@ -82,6 +82,8 @@ public class PenaThaimaa {
                 
         int valinta;
         String lukuStr;
+        int aktiviteettivalinta;
+        
         
         lukuStr = JOptionPane.showInputDialog(thaimaaMenu);
         valinta = Integer.parseInt(lukuStr);
@@ -99,20 +101,61 @@ public class PenaThaimaa {
                     break;
         }
         //Olet Nyt hotelilla ja alat tehdä MITÄ? -jari
+        do{
+            
+             
+        lukuStr = JOptionPane.showInputDialog(thaimaaMenu);
+        valinta = Integer.parseInt(lukuStr);      
         switch (valinta){
-            case 1: JOptionPane.showMessageDialog(null, valinnat);
+            
+        
+            case 1: JOptionPane.showMessageDialog(allas);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
-            case 2: JOptionPane.showMessageDialog(null, valinnat);
+            
+            case 2: JOptionPane.showMessageDialog(alue);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
-            case 3: JOptionPane.showMessageDialog(null, valinnat);
+            
+            case 3: JOptionPane.showMessageDialog(vuokra);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
-            case 4: JOptionPane.showMessageDialog(null, valinnat);
+            
+            case 4: JOptionPane.showMessageDialog(ruoka);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
-            case 5: JOptionPane.showMessageDialog(null, valinnat);
+            
+            case 5: JOptionPane.showMessageDialog(hieronta);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
             break;
+            
+            case 6: JOptionPane.showMessageDialog(kuntosali);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
+            break;
+            
+            case 7: JOptionPane.showMessageDialog(yöelämä);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
+            break;
+            
+            case 8: JOptionPane.showMessageDialog(retki);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
+            break;
+            
+            case 9: JOptionPane.showMessageDialog(seuralainen);
+            aktiviteettivalinta = Integer.parseInt(lukuStr);
+            break;
+            
+            case 10: penaO.otaLaina();
+            break;
+            
+            case 11: JOptionPane.showMessageDialog(null,"Rahatilanne:" + penaO.getRahat());
+            break;
+            
+            default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
         }
         
+
         
-    }
+    
    
-}
+
