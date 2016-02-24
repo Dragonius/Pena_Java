@@ -86,9 +86,6 @@ public class PenaSuomi {
                 
             case 1: lukuStr = JOptionPane.showInputDialog(baarimenu);
             menuvalinta = Integer.parseInt(lukuStr);
-//             + "1. Karaoke-baari \n"
-//                + "2. Perus pubi \n"
-//                + "3. Yökerho \n";
             metodit.baari(menuvalinta);
             
             
@@ -96,6 +93,7 @@ public class PenaSuomi {
             
             case 2: lukuStr = JOptionPane.showInputDialog(keilamenu);
             menuvalinta = Integer.parseInt(lukuStr);
+            metodit.keilaus(menuvalinta);
             
             break;
             
