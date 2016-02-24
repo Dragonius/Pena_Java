@@ -112,6 +112,7 @@ public class PenaSuomi {
             
             case 5: lukuStr = JOptionPane.showInputDialog(urheilumenu);
             menuvalinta = Integer.parseInt(lukuStr);
+            metodit.urheilu(menuvalinta, penaO);
             
             break;
             
