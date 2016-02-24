@@ -87,9 +87,79 @@ public class PenaSuomiMetodit {
           break;
           case 2: penaO.lisääEeppisyyttä(6);
           penaO.lisääAika(1);
-          JOptionPane.showMessageDialog(null, "Kivan peli-illan vietit");
+          JOptionPane.showMessageDialog(null, "Kivan peli-illan vietit.");
           break;
+          case 3: penaO.lisääEeppisyyttä(1);
+          penaO.lisääAika(1);
+          JOptionPane.showMessageDialog(null, "Siivosit ja tiskasit? Olipa tylsää.");
+          break;
+          case 4: penaO.lisääEeppisyyttä(3);
+          penaO.lisääAika(1);
+          JOptionPane.showMessageDialog(null, "Luit hyvää kirjaa koko päivän.");
+          default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
                   
       }
+      
     }
-}
+    public void ruoka(int valinta, PenaOlio penaO){
+        int random;
+        //        "Missä käyt syömässä?\n"
+//                + "1. Pizzeria \n"
+//                + "2. Hieno ravintola \n"
+//                + "3. McDonald's \n"
+//                + "4. Nakkigrilli \n";
+
+        switch (valinta){
+            case 1: penaO.otaRahaa(15);
+            random = (1 + (int) (Math.random()*9));
+            if (random == 3){
+                penaO.vähennäEeppisyyttä(7);
+                JOptionPane.showMessageDialog(null, "Sait ruokamyrkytyksen :(");
+                
+            }else{
+                penaO.lisääEeppisyyttä(7);
+                JOptionPane.showMessageDialog(null,"Nam nam! Hyvää pizzaa!");
+            }
+            penaO.lisääAika(1);
+            break;
+            case 2: if (naisystävä ==1){
+                penaO.otaRahaa(180);
+                penaO.lisääEeppisyyttä(16);
+                JOptionPane.showMessageDialog(null, "Veit aikaisemmin baarista nappaamasi neidon syömään hienoa ruokaa. Mahtavat treffit!");
+            }else{
+                penaO.otaRahaa(90);
+                penaO.lisääEeppisyyttä(8);
+                JOptionPane.showMessageDialog(null, "Kävit yksin syömässä mahtavaa fine dining-ruokaa!");
+                
+            }
+            penaO.lisääAika(1);
+            break;
+            case 3: pena.otaRahaa(10);
+            random = (1 +(int) (Math.random()*3));
+            if (random == 2){
+                penaO.vähennäEeppisyyttä(10);
+                JOptionPane.showMessageDialog(null, "Söit kymmenen euron juustoa. Nyt on todella huono olo :s");
+                
+            }else{
+                penaO.lisääEeppisyyttä(9);
+                JOptionPane.showMessageDialog(null, "Söit kymmenen euron juustoa eikä tunnu missään! Kova jätkä!");
+            }
+            penaO.lisääAika(1);
+            break;
+            case 4: pena.otaRahaa(8);
+            random = (1 +(int) (Math.random()*3));
+            if (random == 2){
+                penaO.vähennäEeppisyyttä(5);
+                JOptionPane.showMessageDialog(null, "Sait ruokamyrkytyksen. Oivoi!");
+            }else {
+                penaO.lisääEeppisyyttä(3);
+                JOptionPane.showMessageDialog(null, "Söit nakkikiskalla. Ihan kohtuullista safkaa.");
+            }
+            default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
+            }
+                
+            }
+        }
+    
+
+
