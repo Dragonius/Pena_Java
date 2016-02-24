@@ -15,13 +15,17 @@ public class PenaThaimaa {
         
         String valinnat = "Olet hotellilla, Hotellin katolla on uima-allas ja ulkona paistaa aurinko mitä haluat tehdä seuraavaksi?\n"
                 +"1. Suuntaan altaalle! "
-                +"2. Tutustun alueeseen!"
-                +"3. Vuokraan kulkuvälineen";
+                +"2. Tutustun alueeseen! "
+                +"3. Vuokraan kulkuvälineen! "
+                +"4. Lähden syömään! "
+                +"5. Lähden hierontaan! ";
                 // muutin yllä olevan 4:n 3:ksi -jari
         String allas = "Saavut altaalle...";
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
-                +"Mieleni tekee olutta"
-                +"Palaan hotellille";
+                +"1. Mieleni tekee olutta"
+                +"2. Päätän lähteä shoppailemaan"
+                +"3. Ostan jotain purtavaa "
+                +"4. Palaan hotellille";
         String Vuokra = "Päätät vuokrata kulkuvälineen:\n"
                 +"1. Vuokraat skootterin! "
                 +"2. Vuokraat Pyörän!"
@@ -51,6 +55,10 @@ public class PenaThaimaa {
             case 2: JOptionPane.showMessageDialog(null, valinnat);
             break;
             case 3: JOptionPane.showMessageDialog(null, valinnat);
+            break;
+            case 4: JOptionPane.showMessageDialog(null, valinnat);
+            break;
+            case 5: JOptionPane.showMessageDialog(null, valinnat);
             break;
         }
         
