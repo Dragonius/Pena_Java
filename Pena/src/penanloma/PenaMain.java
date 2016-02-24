@@ -8,6 +8,7 @@ public class PenaMain {
         //Muuttujat Ja alkuteksti
         int valinta;
         String lukuStr;
+        PenaOlio penaO = new PenaOlio();
         PenaKontrolleri kontrolleri = new PenaKontrolleri();
         String alkuTervehdys = "Hei Pena! Oletko valmis viettämään huikean loman? \n"
                 + "Sinulla on kymmenen päivää aikaa viettää mahdollisimman mahtava loma. \n"
@@ -24,15 +25,15 @@ public class PenaMain {
         valinta = Integer.parseInt(lukuStr);
         
         //TEMPUT
-        do{
+
         switch(valinta){
-            case 1: kontrolleri.suomi();
+            case 1: kontrolleri.suomi(penaO);
             break;
-            case 2: kontrolleri.thaimaa();
+            case 2: kontrolleri.thaimaa(penaO);
             break;
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
         }
-        }while(valinta != 9);
+
         
         //OUTPUT
         //Loppu tulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
