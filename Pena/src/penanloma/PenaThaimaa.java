@@ -14,11 +14,16 @@ public class PenaThaimaa {
         +"3. Liftaan hotellille\n";
         
         String valinnat = "Olet hotellilla, Hotellin katolla on uima-allas ja ulkona paistaa aurinko mitä haluat tehdä seuraavaksi?\n"
-                +"1. Suuntaan altaalle! "
-                +"2. Tutustun alueeseen! "
-                +"3. Vuokraan kulkuvälineen! "
-                +"4. Lähden syömään! "
-                +"5. Lähden hierontaan! ";
+                +"1. Suuntaan altaalle! \n"
+                +"2. Tutustun alueeseen! \n"
+                +"3. Vuokraan kulkuvälineen! \n "
+                +"4. Lähden syömään! \n"
+                +"5. Lähden hierontaan! \n "
+                +"6. Lähden kuntosalille! \n "
+                +"7. Lähden yöelämään! \n "
+                +"8. Lähden retkelle! \n "
+                +"9. Päätän lähteä hakemaan seuralaista loman ajaksi.(maksullinne nainen 200€) \n"
+                +"10. Otan lainan (+ 500€). \n ";
                 // muutin yllä olevan 4:n 3:ksi -jari
         String allas = "Saavut altaalle...";
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
@@ -30,6 +35,34 @@ public class PenaThaimaa {
                 +"1. Vuokraat skootterin! "
                 +"2. Vuokraat Pyörän!"
                 +"3. Vuokraat mönkijän! ";
+        String ruoka = "Päätät lähteä syömään, missä käyt syömässä? \n"
+                +"1. McDonald's \n"
+                +"2. Hieno ravintola (5* illallinen) \n"
+                +"3. Ostan ruokaa katukojusta \n"
+                +"4. Käyt syömässä perinteisen thaimaalaisen menun. \n";
+        String hieronta = "Päätit ottaa hieronnan: \n"
+                +"1. Otat päähieronnan. \n"
+                +"2. Otat thaihieronnan. \n"
+                +"3. Otat kuumakivihieronnan. \n"
+                +"4. Otat jalkahieronnan. \n"
+                +"5. Otat akupunktiohoidon. \n";
+        String kuntosali = "päätit lähteä kuntoilemaan! \n"
+                +"1. Päätän mennä spinning tunnille! \n"
+                +"2. Päätän nostaa rautaa yksin. \n "
+                +"3. Päätän sluibata ja ottaa vain kuvia. \n"
+                +"4. Päätät mennä joogaan \n";
+        String yöelämä = "Päätit lähteä katsastamaan Bangkokin yöelämää! \n"
+                +"1. Päädyt hotellisi klubille, jossa on paikallinen huippu dj soittamassa. \n "
+                +"2. Lähdet Bangkokin suurimmalle casinolle! \n"
+                +"3. Lähdet Strippi klubille! \n"
+                +"4. Päädyt rentoon baariin jossa viihdyt loppuillan! \n";
+        String retki = "Päätit lähteä retkelle ja pois Bagkokin melusta! \n"
+                +"1. Päätät lähteä kiertelemään museoita. \n"
+                +"2. Showtime! Päätät käydä katsomassa calypso cabareen (tunnettu ladyboyshow)."
+                +"3. Päätät lähteä katsomaan thainyrkkeilyiltaa. \n"
+                +"4. Lähdet illallisristeilylle Chao Phraya joelle! \n"
+                +"5. ";
+                
         int valinta;
         String lukuStr;
         
