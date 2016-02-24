@@ -3,13 +3,14 @@ package penanloma;
 import javax.swing.JOptionPane;
 
 //private int Penaolio
+//luodaan private int oliot joita muutetaan vain metodeiden kautta.
 public class PenaOlio {
     private int rahat;
     private int eeppisyys;
     private int aika;
     private int laina;
     
-    // luo pena olio ja määritä rahat sekä aika että eeppisyys
+    // luo pena olio ja määritä rahat, aika, eeppisyys ja onko laina otettu muuttujat.
     public PenaOlio(){
         rahat = 1000;
         eeppisyys = 0;
@@ -44,7 +45,8 @@ public class PenaOlio {
     }
     // Rahan toiminta olio
     public int otaRahaa(int maksu){
-
+//tarkista onko rahaa ja jos on niin vähennä maksuna
+//Mikälli ei ole rahaa. palauta teksti että rahasi loppuivat
         int palautus;
         if (maksu <= rahat) {
             rahat = rahat - maksu;
@@ -55,13 +57,14 @@ public class PenaOlio {
         }
         return palautus;
     }
+//lisää rahaa X summa mikä tulee metodin kautta
     public int lisääRahaa(int summa){
         int palautus;
         rahat = rahat + summa;
         palautus = rahat;
         return palautus;
     }
-    //puutuu että onko laina otettu vai ei.
+//Tarkista onko laina annettu ja anna laina mikälli lainaa ei ole otettu vielä
     public int otaLaina(){
         int palautus;
         if (laina==0) {
@@ -75,6 +78,7 @@ public class PenaOlio {
         }
         return palautus;
     }
+//Lisää päiviä aikaan.
     public int lisääAika(int päivä){
         int palautus;
         aika = aika + päivä;
