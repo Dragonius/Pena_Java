@@ -100,11 +100,13 @@ public class PenaSuomi {
             
             case 3: lukuStr = JOptionPane.showInputDialog(kotimenu);
             menuvalinta = Integer.parseInt(lukuStr);
+            metodit.koti(menuvalinta, penaO);
             
             break;
             
             case 4: lukuStr = JOptionPane.showInputDialog(ulkosyömismenu);
             menuvalinta = Integer.parseInt(lukuStr);
+            metodit.ruoka(menuvalinta, penaO);
             
             break;
             
