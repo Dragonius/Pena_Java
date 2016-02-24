@@ -22,7 +22,10 @@ public class PenaThaimaa {
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
                 +"Mieleni tekee olutta"
                 +"Palaan hotellille";
-        String Vuokra = "";
+        String Vuokra = "Päätät vuokrata kulkuvälineen:\n"
+                +"1. Vuokraat skootterin! "
+                +"2. Vuokraat Pyörän!"
+                +"3. Vuokraat mönkijän! ";
         int valinta;
         String lukuStr;
         
