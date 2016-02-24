@@ -12,22 +12,12 @@ public class PenaThaimaa {
         +"1. Otan taksin hotellille\n"
         +"2. Kävelen hotellille (Aurinkoa matkalla)\n"
         +"3. Liftaan hotellille\n";
-        
-        String valinnat = "Olet hotellilla, Hotellin katolla on uima-allas ja ulkona paistaa aurinko mitä haluat tehdä seuraavaksi?\n"
-                +"1. Suuntaan altaalle! \n"
-                +"2. Tutustun alueeseen! \n"
-                +"3. Vuokraan kulkuvälineen! \n "
-                +"4. Lähden syömään! \n"
-                +"5. Lähden hierontaan! \n "
-                +"6. Lähden kuntosalille! \n "
-                +"7. Lähden yöelämään! \n "
-                +"8. Lähden retkelle! \n "
-                +"9. Päätän lähteä hakemaan seuralaista loman ajaksi.(maksullinne nainen 200€) \n"
-                +"10. Otan lainan (+ 500€). \n "
-                +"11. Näytä rahatilanne.";
-        
-                // muutin yllä olevan 4:n 3:ksi -jari
-        String allas = "Saavut altaalle...";
+                 
+                
+        String allas = "Saavut altaalle...\n"
+                +"1. Otat aurinkoa koko loppupäivän altaalla (mahdollisuus palaa)\n"
+                +"2. Menet allasbaariin ja juot itsesi humalaan \n"
+                +"3. Pelaat altaalla pelejä ja löydät uusia kavereita!";
         
         String alue = "Lähdet kävelemään Khaosan roadia pitkin ja nopealla silmäyksellä löydät paljon kaikkea kiinnostavaa:\n"
                 +"1. Mieleni tekee olutta"
@@ -91,20 +81,34 @@ public class PenaThaimaa {
         // PENA HOTELLILLA TULOSTE KAIKISSA MUISTA MUUTTAA!!
             switch (valinta){
                 case 1: JOptionPane.showMessageDialog(null, "Olet hotellilla");
-                    pena.otaRahaa(10);
+                    penaO.otaRahaa(10);
                     break;
                 case 2: JOptionPane.showMessageDialog(null, "Olet hotellilla");
-                    pena.lisääEeppisyyttä(1);
+                    penaO.lisääEeppisyyttä(1);
                     break;
                 case 3: JOptionPane.showMessageDialog(null, "Olet hotellilla");
-                    pena.lisääEeppisyyttä(2);
+                    penaO.lisääEeppisyyttä(2);
                     break;
         }
         //Olet Nyt hotelilla ja alat tehdä MITÄ? -jari
         do{
             
+            
              
-        lukuStr = JOptionPane.showInputDialog(thaimaaMenu);
+        lukuStr = JOptionPane.showInputDialog("Olet hotellilla, Hotellin katolla on uima-allas ja ulkona paistaa aurinko mitä haluat tehdä seuraavaksi?\n"
+                +"Lomasi on kestänyt " + penaO.getAika() + " päivää \n"
+                +"1. Suuntaan altaalle! \n"
+                +"2. Tutustun alueeseen! \n"
+                +"3. Vuokraan kulkuvälineen! \n "
+                +"4. Lähden syömään! \n"
+                +"5. Lähden hierontaan! \n "
+                +"6. Lähden kuntosalille! \n "
+                +"7. Lähden yöelämään! \n "
+                +"8. Lähden retkelle! \n "
+                +"9. Päätän lähteä hakemaan seuralaista loman ajaksi.(maksullinne nainen 200€) \n"
+                +"10. Otan lainan (+ 500€). \n "
+                +"11. Näytä rahatilanne.");
+        
         valinta = Integer.parseInt(lukuStr);      
         switch (valinta){
             
