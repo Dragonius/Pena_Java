@@ -43,17 +43,17 @@ public class PenaOlio {
         this.aika = aika;
     }
     // Rahan toiminta olio
-    public void otaRahaa(int maksu){
-        JOptionPane.showMessageDialog(null, maksu);
-//        int palautus;
-//        if (maksu <= rahat) {
-//            rahat = rahat - maksu;
-//            palautus = rahat;
-//        }else {
-//            JOptionPane.showMessageDialog(null, "Rahasi loppuivat!");
-//            palautus = 0;
-//        }
-//        return palautus;
+    public int otaRahaa(int maksu){
+
+        int palautus;
+        if (maksu <= rahat) {
+            rahat = rahat - maksu;
+            palautus = rahat;
+        }else {
+            JOptionPane.showMessageDialog(null, "Rahasi loppuivat!");
+            palautus = 0;
+        }
+        return palautus;
     }
     public int lisääRahaa(int summa){
         int palautus;
