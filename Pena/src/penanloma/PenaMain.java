@@ -20,12 +20,13 @@ public class PenaMain {
                 + "2. Vietän loman Thaimaassa! \n"
                 + "9. Perutaan koko loma.";
         //INPUT
+        //Alku tervehdys josta kutsutaan tarvittava olio.
         JOptionPane.showMessageDialog(null, alkuTervehdys);
         lukuStr = JOptionPane.showInputDialog(alkuvalinta);
         valinta = Integer.parseInt(lukuStr);
         
         //TEMPUT
-
+        //Valinta mikä päättää minkä olio käynistetään kontrollerin kautta.
         switch(valinta){
             case 1: kontrolleri.suomi(penaO);
             break;
