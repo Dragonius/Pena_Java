@@ -5,13 +5,18 @@ package penanloma;
 public class PenaKontrolleri {
     private PenaSuomi suomiloma;
     private PenaThaimaa thaimaaloma;
+    private PenaOlio penaO;
     
-    public void suomi(){
-        suomiloma.suomiAlku();
+    public void suomi(PenaOlio penaO){
+        this.penaO = penaO;
+        PenaSuomi suomi = new PenaSuomi();
+        suomi.suomiAlku(this.penaO);
         
     }
-    public void thaimaa(){
-        thaimaaloma.thaimaaAlku();
+    public void thaimaa(PenaOlio penaO){
+        this.penaO = penaO;
+        PenaThaimaa thaimaa = new PenaThaimaa();
+        thaimaa.thaimaaAlku(this.penaO);
     }
     
     
