@@ -25,7 +25,7 @@ public class PenaMain {
                 + "haluatko oikein repäistä ja lähteä Thaimaan lämpöön.\n  \n"
                 + "1. Haluan jäädä Suomeen. \n"
                 + "2. Vietän loman Thaimaassa! \n"
-                + "9. Perutaan koko loma.";
+                + "3. Perutaan koko loma.";
         //INPUT
         //Alku tervehdys josta kutsutaan tarvittava olio.
         JOptionPane.showMessageDialog(null, alkuTervehdys);
@@ -39,7 +39,7 @@ public class PenaMain {
             break;
             case 2: kontrolleri.thaimaa(penaO);
             break;
-            default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
+            default: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
         }
 
         
