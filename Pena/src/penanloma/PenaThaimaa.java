@@ -6,6 +6,7 @@ public class PenaThaimaa {
     private PenaOlio pena; 
     
     public void thaimaaAlku(PenaOlio penaO){
+        PenaThaimaaMetodi metodit = new PenaThaimaaMetodi();
         
         String thaimaaMenu = "Matka Thaimaahan alkakoon! \n"
         +"Uuvuttavan 14h lennon jälkeen saavut Bangkokin lentokentälle nyt saat valita mitä tehdään\n"
@@ -78,7 +79,7 @@ public class PenaThaimaa {
         lukuStr = JOptionPane.showInputDialog(thaimaaMenu);
         valinta = Integer.parseInt(lukuStr);
         
-        // PENA HOTELLILLA TULOSTE KAIKISSA MUISTA MUUTTAA!!
+        /* PENA HOTELLILLA TULOSTE KAIKISSA MUISTA MUUTTAA!!
             switch (valinta){
                 case 1: JOptionPane.showMessageDialog(null, "Olet hotellilla");
                     penaO.otaRahaa(10);
@@ -90,7 +91,8 @@ public class PenaThaimaa {
                     penaO.lisääEeppisyyttä(2);
                     break;
         }
-        //Olet Nyt hotelilla ja alat tehdä MITÄ? -jari
+        //Olet Nyt hotelilla ja alat tehdä MITÄ? -jari 
+                Tarvitaanko tätä edes :D*/
         do{
             
             
@@ -105,7 +107,7 @@ public class PenaThaimaa {
                 +"6. Lähden kuntosalille! \n "
                 +"7. Lähden yöelämään! \n "
                 +"8. Lähden retkelle! \n "
-                +"9. Päätän lähteä hakemaan seuralaista loman ajaksi.(maksullinne nainen 200€) \n"
+                +"9. Päätän lähteä hakemaan seuralaista loman ajaksi. (maksullinen nainen 200€) \n"
                 +"10. Otan lainan (+ 500€). \n "
                 +"11. Näytä rahatilanne.");
         
@@ -113,40 +115,51 @@ public class PenaThaimaa {
         switch (valinta){
             
         
-            case 1: JOptionPane.showMessageDialog(null, allas);
+            case 1: JOptionPane.showInputDialog(null, allas);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.allas(aktiviteettivalinta, penaO);
             break;
             
-            case 2: JOptionPane.showMessageDialog(null, alue);
+            case 2: JOptionPane.showInputDialog(null, alue);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.alue(aktiviteettivalinta, penaO);
             break;
             
-            case 3: JOptionPane.showMessageDialog(null, vuokra);
+            case 3: JOptionPane.showInputDialog(null, vuokra);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.vuokra(aktiviteettivalinta, penaO);
             break;
             
-            case 4: JOptionPane.showMessageDialog(null, ruoka);
+            case 4: JOptionPane.showInputDialog(null, ruoka);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.ruoka(aktiviteettivalinta, penaO);
             break;
             
-            case 5: JOptionPane.showMessageDialog(null, hieronta);
+            case 5: JOptionPane.showInputDialog(null, hieronta);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.hieronta(aktiviteettivalinta, penaO);
             break;
             
-            case 6: JOptionPane.showMessageDialog(null, kuntosali);
+            case 6: JOptionPane.showInputDialog(null, kuntosali);
+            penaO.otaRahaa(10);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.kuntosali(aktiviteettivalinta, penaO);
             break;
             
-            case 7: JOptionPane.showMessageDialog(null, yöelämä);
+            case 7: JOptionPane.showInputDialog(null, yöelämä);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.yöelämä(aktiviteettivalinta, penaO);
             break;
             
-            case 8: JOptionPane.showMessageDialog(null, retki);
+            case 8: JOptionPane.showInputDialog(null, retki);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            metodit.retki(aktiviteettivalinta, penaO);
             break;
             
-            case 9: JOptionPane.showMessageDialog(null, seuralainen);
+            case 9: JOptionPane.showInputDialog(null, seuralainen);
             aktiviteettivalinta = Integer.parseInt(lukuStr);
+            penaO.otaRahaa(200);
+            metodit.seuralainen(aktiviteettivalinta, penaO);
             break;
             
             case 10: penaO.otaLaina();
