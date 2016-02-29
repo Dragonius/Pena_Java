@@ -34,10 +34,17 @@ public class PenaMain {
         lukuStr = JOptionPane.showInputDialog(alkuvalinta);
         
         /* Tarkista onko Annettu String Null, jos on
-        niin palauta valikko takaisin ja laita tekemään uusi valinta -jari 
+        niin tulosta Rhat sekä eepisyys, Pitää vielä muuttaa metodiksi -jari 
         */
-        while(lukuStr == null ){ 
-            lukuStr = JOptionPane.showInputDialog(alkuvalinta);
+        while(lukuStr == null ){
+            
+        JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+        + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
+        + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
+        System.exit(0);    
+/*      
+        lukuStr = JOptionPane.showInputDialog(alkuvalinta);
+        */
         }
         valinta = Integer.parseInt(lukuStr); 
         
@@ -49,14 +56,19 @@ public class PenaMain {
             case 2: kontrolleri.thaimaa(penaO);
             break;
             default: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
+            JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+            + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
+            + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
+            
         }
 
         
         //OUTPUT
         //Loppu tulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
-        JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+ /*       JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
         + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
         + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
-    }
+*/
         
-    }
+        }
+}

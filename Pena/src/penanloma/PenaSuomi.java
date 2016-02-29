@@ -88,20 +88,11 @@ public class PenaSuomi {
             vielä lopettaa tätät ohjelmaa... -jari
             */
             while(lukuStr == null ){
-                lukuStr = JOptionPane.showInputDialog("Olet päättänyt jäädä Suomeen. \n"
-                + "Lomasi on kestänyt "+penaO.getAika()+" päivää\n"
-                + "Kerroppa mitä haluat tehdä.\n \n 1. Lähden baariin. \n"
-                + "2. Lähden kavereiden kanssa keilaamaan. \n"
-                + "3. Vietän koti-illan. \n"
-                + "4. Käyn ulkona syömässä. \n"
-                + "5. Käyn urheilemassa.  \n"
-                + "6. Lähden risteilylle Viron laivalle. \n"
-                + "7. Käyn hieronnassa. \n"
-                + "8. Käyn ostoksilla. \n"
-                + "9. Teen rikoksen. \n"
-                + "10. Otan lainan (+ 500e). \n"
-                + "11. Näytä rahatilanne.");
-        }
+        JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+        + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
+        + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
+        System.exit(0);
+            }
             valinta = Integer.parseInt(lukuStr);
             switch (valinta){
                 
