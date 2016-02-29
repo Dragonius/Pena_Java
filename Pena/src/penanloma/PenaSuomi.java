@@ -82,6 +82,26 @@ public class PenaSuomi {
                 + "9. Teen rikoksen. \n"
                 + "10. Otan lainan (+ 500e). \n"
                 + "11. Näytä rahatilanne.");
+            
+            /* Niin kauan kuin alkuvalinta on Null(=Cancel taikka X oikeasta
+            Yläkulmasta niin aja ohjelmaa. (tästä voi tulla ongelma että ei voi
+            vielä lopettaa tätät ohjelmaa... -jari
+            */
+            while(lukuStr == null ){
+                lukuStr = JOptionPane.showInputDialog("Olet päättänyt jäädä Suomeen. \n"
+                + "Lomasi on kestänyt "+penaO.getAika()+" päivää\n"
+                + "Kerroppa mitä haluat tehdä.\n \n 1. Lähden baariin. \n"
+                + "2. Lähden kavereiden kanssa keilaamaan. \n"
+                + "3. Vietän koti-illan. \n"
+                + "4. Käyn ulkona syömässä. \n"
+                + "5. Käyn urheilemassa.  \n"
+                + "6. Lähden risteilylle Viron laivalle. \n"
+                + "7. Käyn hieronnassa. \n"
+                + "8. Käyn ostoksilla. \n"
+                + "9. Teen rikoksen. \n"
+                + "10. Otan lainan (+ 500e). \n"
+                + "11. Näytä rahatilanne.");
+        }
             valinta = Integer.parseInt(lukuStr);
             switch (valinta){
                 
@@ -142,6 +162,10 @@ public class PenaSuomi {
             
             case 11: JOptionPane.showMessageDialog(null,"Rahatilanne: " + penaO.getRahat());
             
+            /* Case 12 Lopeta ohjelma ja tulosta näytölle eepisyys ja raha sekä lopeta.
+            Ilman että ohjelma lopettaa ja ikkuna vain välähtää näytöllä
+            System.exit(0) ; 
+            */
             break;
             
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");

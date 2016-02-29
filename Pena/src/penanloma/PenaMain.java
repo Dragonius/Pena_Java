@@ -26,11 +26,20 @@ public class PenaMain {
                 + "1. Haluan jäädä Suomeen. \n"
                 + "2. Vietän loman Thaimaassa! \n"
                 + "3. Perutaan koko loma.";
+        String lopetustilasto = "Aikaa kului " + penaO.getAika() +"\n"
+                + "ja Rahaa jäi " + penaO.getRahat() +"\n";
         //INPUT
         //Alku tervehdys josta kutsutaan tarvittava olio.
         JOptionPane.showMessageDialog(null, alkuTervehdys);
         lukuStr = JOptionPane.showInputDialog(alkuvalinta);
-        valinta = Integer.parseInt(lukuStr);
+        
+        /* Tarkista onko Annettu String Null, jos on
+        niin palauta valikko takaisin ja laita tekemään uusi valinta -jari 
+        */
+        while(lukuStr == null ){ 
+            lukuStr = JOptionPane.showInputDialog(alkuvalinta);
+        }
+        valinta = Integer.parseInt(lukuStr); 
         
         //TEMPUT
         //Valinta mikä päättää minkä olio käynistetään kontrollerin kautta.
@@ -46,5 +55,5 @@ public class PenaMain {
         //OUTPUT
         //Loppu tulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
     }
-
-}
+        
+    }
