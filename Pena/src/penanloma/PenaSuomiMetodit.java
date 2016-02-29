@@ -210,15 +210,16 @@ public class PenaSuomiMetodit {
                 random = (1 + (int) (Math.random()*9));
             if (random ==9){
                 penaO.lisääEeppisyyttä(30);
-                JOptionPane.showMessageDialog(null, "Hyvin aloitettu ilta jatkui hyttiisi, josta aamulla,"
-                + "jatkoit hymyilen terminaaliin ");
+                JOptionPane.showMessageDialog(null, "Hyvin aloitettu ilta jatkui parkettilattialla,"
+                + "josta veit hyttiisi seuralaisen ja jatkoit aamulla hymyilen terminaaliin ");
             }
             if (random ==1){
                 penaO.vähennäEeppisyyttä(20);
                 JOptionPane.showMessageDialog(null, "Hyvin aloitettu ilta jatkui laiva selliin, jonkun "
-                + "jaloitettu tappelun kanssasi ");
+                + "aloitettu tappelun kanssasi ");
             }else{
                 penaO.lisääEeppisyyttä(10);
+                JOptionPane.showMessageDialog(null, "Perusristeily, ei mitään erikoista tapahtunut");
             }
             penaO.lisääAika(1);
             break;
@@ -229,6 +230,7 @@ public class PenaSuomiMetodit {
                 JOptionPane.showMessageDialog(null, "Suoraan baariin ja siitä suoran putkaan.");
             }else{
                 penaO.lisääEeppisyyttä(15);
+                JOptionPane.showMessageDialog(null, "Jalka vibatti ihan kivasti. Ehkä ens kerralla sit ;)");
             }
             penaO.lisääAika(1);
             break;
@@ -239,6 +241,7 @@ public class PenaSuomiMetodit {
                 JOptionPane.showMessageDialog(null, "Ai ai ai. onnistut tuhoamaan koko lastin kaatumalla laatikoiden päälle.");
             }else{
                 penaO.lisääEeppisyyttä(15);
+                JOptionPane.showMessageDialog(null, "Juotavaa vain omaan kayttoon, jep jep");
             }
             penaO.lisääAika(1);
                 break;
@@ -246,11 +249,24 @@ public class PenaSuomiMetodit {
             penaO.lisääEeppisyyttä(11);
             JOptionPane.showMessageDialog(null, "Nukuit hytissä ja sait kerrankin nukuttua pitkään.");
             penaO.lisääAika(1);
-                break;
+            break;
             case 5: penaO.otaRahaa(93);
-            JOptionPane.showMessageDialog(null, "Kasinolla pitää käydä ja sitten ");
+            random = (1 + (int) (Math.random()*9));
+            if (random ==3){
+            JOptionPane.showMessageDialog(null, "Kasinolla pitää käydä ja sitten menikin enemän kuin piti. voi voi ");
+            penaO.otaRahaa(93);
+            penaO.vähennäEeppisyyttä(201);
+            }
+            if (random ==6){
+            JOptionPane.showMessageDialog(null, "Voitto kotiin kasinolla. Rahaa tuli kivasti ");
+            penaO.lisääRahaa(300);
+            penaO.lisääEeppisyyttä(201);
+            }else{
+            JOptionPane.showMessageDialog(null," Olihan toi ok käydä pelailemassa");
+            penaO.lisääEeppisyyttä(15);
+            }
             penaO.lisääAika(1);
-                break;
+            break;
                 
     }
 }
