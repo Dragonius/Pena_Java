@@ -54,6 +54,9 @@ public class PenaMain {
         
         //OUTPUT
         //Loppu tulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
+        JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+        + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
+        + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
     }
         
     }
