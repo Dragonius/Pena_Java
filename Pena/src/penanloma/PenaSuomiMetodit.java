@@ -196,4 +196,62 @@ public class PenaSuomiMetodit {
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
         }
     }
-        }
+        public void viromenu(int valinta, PenaOlio penaO){
+        int random;
+/*
+1. Ekana Tax Freehen ostamaan viinat, hytissä alottelua, sitten tanssimaan baariin ja iskemään naisia!
+2. Suoraan baariin juomaan loppuillaksi!
+3. Tax Freen kautta loppuillaksi hyttiin murjottamaan.
+4. Nukun vain hytissä.
+5. Kasinolla pitää käydä!
+*/
+        switch (valinta){
+            case 1: penaO.otaRahaa(300);
+                random = (1 + (int) (Math.random()*9));
+            if (random ==9){
+                penaO.lisääEeppisyyttä(30);
+                JOptionPane.showMessageDialog(null, "Hyvin aloitettu ilta jatkui hyttiisi, josta aamulla,"
+                + "jatkoit hymyilen terminaaliin ");
+            }
+            if (random ==1){
+                penaO.vähennäEeppisyyttä(20);
+                JOptionPane.showMessageDialog(null, "Hyvin aloitettu ilta jatkui laiva selliin, jonkun "
+                + "jaloitettu tappelun kanssasi ");
+            }else{
+                penaO.lisääEeppisyyttä(10);
+            }
+            penaO.lisääAika(1);
+            break;
+            case 2: penaO.otaRahaa(100);
+            random = (1 + (int) (Math.random()*9));
+            if (random ==5){
+                penaO.vähennäEeppisyyttä(22);
+                JOptionPane.showMessageDialog(null, "Suoraan baariin ja siitä suoran putkaan.");
+            }else{
+                penaO.lisääEeppisyyttä(15);
+            }
+            penaO.lisääAika(1);
+            break;
+            case 3: penaO.otaRahaa(85);
+            random = (1 + (int) (Math.random()*9));
+            if (random ==3){
+                penaO.vähennäEeppisyyttä(30);
+                JOptionPane.showMessageDialog(null, "Ai ai ai. onnistut tuhoamaan koko lastin kaatumalla laatikoiden päälle.");
+            }else{
+                penaO.lisääEeppisyyttä(15);
+            }
+            penaO.lisääAika(1);
+                break;
+            case 4:
+            penaO.lisääEeppisyyttä(11);
+            JOptionPane.showMessageDialog(null, "Nukuit hytissä ja sait kerrankin nukuttua pitkään.");
+            penaO.lisääAika(1);
+                break;
+            case 5: penaO.otaRahaa(93);
+            JOptionPane.showMessageDialog(null, "Kasinolla pitää käydä ja sitten ");
+            penaO.lisääAika(1);
+                break;
+                
+    }
+}
+}

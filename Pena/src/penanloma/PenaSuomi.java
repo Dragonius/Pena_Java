@@ -129,7 +129,7 @@ public class PenaSuomi {
             
             case 6: lukuStr = JOptionPane.showInputDialog(viromenu);
             menuvalinta = Integer.parseInt(lukuStr);
-            //metodit.viromenu(menuvalinta, penaO);
+            metodit.viromenu(menuvalinta, penaO);
             
             break;
             
@@ -157,10 +157,11 @@ public class PenaSuomi {
             
             case 11: JOptionPane.showMessageDialog(null,"Rahatilanne: " + penaO.getRahat());
             
-            /* Case 12 Lopeta ohjelma ja tulosta näytölle eepisyys ja raha sekä lopeta.
-            Ilman että ohjelma lopettaa ja ikkuna vain välähtää näytöllä
-            System.exit(0) ; 
-            */
+            case 12: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
+            JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+            + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
+            + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
+            System.exit(0);
             break;
             
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");

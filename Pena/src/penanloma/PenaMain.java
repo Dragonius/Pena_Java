@@ -41,7 +41,7 @@ public class PenaMain {
         JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
         + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
         + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
-        System.exit(0);    
+        System.exit(0);
 /*      
         lukuStr = JOptionPane.showInputDialog(alkuvalinta);
         */
