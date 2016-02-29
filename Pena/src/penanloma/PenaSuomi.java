@@ -138,21 +138,25 @@ public class PenaSuomi {
             
             case 6: lukuStr = JOptionPane.showInputDialog(viromenu);
             menuvalinta = Integer.parseInt(lukuStr);
+            //metodit.viromenu(menuvalinta, penaO);
             
             break;
             
             case 7: lukuStr = JOptionPane.showInputDialog(hierontamenu);
             menuvalinta = Integer.parseInt(lukuStr);
+            //metodit.hierontamenu(menuvalinta, penaO);
             
             break;
             
             case 8: lukuStr = JOptionPane.showInputDialog(ostosmenu);
             menuvalinta = Integer.parseInt(lukuStr);
+           //metodit.ostosmenu(menuvalinta, penaO);
             
             break;
             
             case 9: lukuStr = JOptionPane.showInputDialog(rikosmenu);
             menuvalinta = Integer.parseInt(lukuStr);
+            //metodit.rikosmenu(menuvalinta, penaO);
             
             break;
             
