@@ -53,6 +53,8 @@ public class PenaOlio {
             palautus = rahat;
         }else {
             JOptionPane.showMessageDialog(null, "Rahasi loppuivat!");
+            setRahat(0);
+            vähennäEeppisyyttä(20);
             palautus = 0;
         }
         return palautus;
@@ -70,7 +72,9 @@ public class PenaOlio {
         if (laina==0) {
         rahat = rahat + 500;
         laina = 1;
-        palautus = rahat;  
+        palautus = rahat;
+        vähennäEeppisyyttä(10);
+        JOptionPane.showMessageDialog(null, "Laina otettu onnistuneesti.");
         }
         else {
             JOptionPane.showMessageDialog(null, "Olet jo ottanut lainasi!");
