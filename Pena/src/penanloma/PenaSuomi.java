@@ -62,15 +62,15 @@ public class PenaSuomi {
                 + "4. Murtaudun vanhuksen kotiin \n"
                 + "5. Pahoinpitelen ja ryöstän jonkun \n";
 //luo menun int valinnat ja Stringi 
-        int menuvalinta = 0;      
-        int valinta = 0;
-        String lukuStr = "";
+        int menuvalinta;      
+        int valinta;
+        String lukuStr;
         
         
         do {        
 
             lukuStr = JOptionPane.showInputDialog("Olet päättänyt jäädä Suomeen. \n"
-                + "Lomasi on kestänyt "+penaO.getAika()+" päivää\n"
+                + "Tämä on lomasi "+(penaO.getAika()+ 1)+". päivä\n"
                 + "Kerroppa mitä haluat tehdä.\n \n 1. Lähden baariin. \n"
                 + "2. Lähden kavereiden kanssa keilaamaan. \n"
                 + "3. Vietän koti-illan. \n"
@@ -81,17 +81,18 @@ public class PenaSuomi {
                 + "8. Käyn ostoksilla. \n"
                 + "9. Teen rikoksen. \n"
                 + "10. Otan lainan (+ 500e). \n"
-                + "11. Näytä rahatilanne.");
+                + "11. Näytä rahatilanne. \n"
+                + "12. Lopeta loma");
             
             /* Niin kauan kuin alkuvalinta on Null(=Cancel taikka X oikeasta
             Yläkulmasta niin aja ohjelmaa. (tästä voi tulla ongelma että ei voi
             vielä lopettaa tätät ohjelmaa... -jari
             */
             while(lukuStr == null ){
-        JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+        /*JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
         + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
         + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
-        System.exit(0);
+        System.exit(0);*/
             }
             valinta = Integer.parseInt(lukuStr);
             switch (valinta){
@@ -129,25 +130,25 @@ public class PenaSuomi {
             
             case 6: lukuStr = JOptionPane.showInputDialog(viromenu);
             menuvalinta = Integer.parseInt(lukuStr);
-            metodit.viromenu(menuvalinta, penaO);
+            metodit.viro(menuvalinta, penaO);
             
             break;
             
             case 7: lukuStr = JOptionPane.showInputDialog(hierontamenu);
             menuvalinta = Integer.parseInt(lukuStr);
-            //metodit.hierontamenu(menuvalinta, penaO);
+            metodit.hieronta(menuvalinta, penaO);
             
             break;
             
             case 8: lukuStr = JOptionPane.showInputDialog(ostosmenu);
             menuvalinta = Integer.parseInt(lukuStr);
-           //metodit.ostosmenu(menuvalinta, penaO);
+           metodit.ostos(menuvalinta, penaO);
             
             break;
             
             case 9: lukuStr = JOptionPane.showInputDialog(rikosmenu);
             menuvalinta = Integer.parseInt(lukuStr);
-            //metodit.rikosmenu(menuvalinta, penaO);
+            metodit.rikos(menuvalinta, penaO);
             
             break;
             
@@ -156,12 +157,10 @@ public class PenaSuomi {
             break;
             
             case 11: JOptionPane.showMessageDialog(null,"Rahatilanne: " + penaO.getRahat());
-            
+            break;
             case 12: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
-            JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
-            + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
-            + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
-            System.exit(0);
+            penaO.setRahat(0);
+
             break;
             
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
@@ -171,7 +170,7 @@ public class PenaSuomi {
 
         }
         // niin kauan kuin penan aika on vähemmän kuin 10 ja raha on enemän kuin 0
-        while(penaO.getAika()<=10 && penaO.getRahat()>0);
+        while(penaO.getAika()<10 && penaO.getRahat()>0);
         
         
     }
