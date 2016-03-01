@@ -26,8 +26,8 @@ public class PenaMain {
                 + "1. Haluan jäädä Suomeen. \n"
                 + "2. Vietän loman Thaimaassa! \n"
                 + "3. Perutaan koko loma.";
-        String lopetustilasto = "Aikaa kului " + penaO.getAika() +"\n"
-                + "ja Rahaa jäi " + penaO.getRahat() +"\n";
+        /*String lopetustilasto = "Aikaa kului " + penaO.getAika() +"\n"
+                + "ja Rahaa jäi " + penaO.getRahat() +"\n";*/
         //INPUT
         //Alku tervehdys josta kutsutaan tarvittava olio.
         JOptionPane.showMessageDialog(null, alkuTervehdys);
@@ -38,10 +38,10 @@ public class PenaMain {
         */
         while(lukuStr == null ){
             
-        JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
-        + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
+        /*JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
+        + "Eeppisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
         + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
-        System.exit(0);
+        System.exit(0);*/
 /*      
         lukuStr = JOptionPane.showInputDialog(alkuvalinta);
         */
@@ -52,19 +52,20 @@ public class PenaMain {
         //Valinta mikä päättää minkä olio käynistetään kontrollerin kautta.
         switch(valinta){
             case 1: kontrolleri.suomi(penaO);
+            kontrolleri.loppu(penaO);
             break;
             case 2: kontrolleri.thaimaa(penaO);
+            kontrolleri.loppu(penaO);
             break;
             default: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
-            JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
-            + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
-            + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
+
             
         }
+        
 
         
         //OUTPUT
-        //Loppu tulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
+        //Lopputulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
  /*       JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
         + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
         + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
