@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class PenaThaimaaMetodi {
 
     private PenaOlio pena;
+    int random;
 
     public void allas(int valinta, PenaOlio penaO) {
         /*+"1. Otan aurinkoa koko loppupäivän altaalla (mahdollisuus palaa)\n"
@@ -12,18 +13,43 @@ public class PenaThaimaaMetodi {
          +"3. Pelaan altaalla pelejä ja löydät uusia kavereita!";*/
         switch (valinta) {
             case 1:
-                penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
-
+                random = (1 + (int) (Math.random()*2));
+            if (random == 1){
+                penaO.vähennäEeppisyyttä(10);
+                JOptionPane.showMessageDialog(null, "Nukahdit aurinkoon ja paloit");
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "Kehosi on ruskea kuin kreikkalaisella adoniksella");
+                penaO.lisääEeppisyyttä(10);
+                        }
                 break;
             case 2:
-                penaO.otaRahaa(1);
-                penaO.lisääEeppisyyttä(1);
-                penaO.lisääAika(1);
+                random = (1 + (int) (Math.random()*3));
+            if (random == 1){
+                penaO.vähennäEeppisyyttä(10);
+                penaO.otaRahaa(150);
+                JOptionPane.showMessageDialog(null, "Joit täysin yli rajojesi ja sait illasta muistoksi vain 100e laskun.");
+            }
+            else if(random == 2){
+                penaO.otaRahaa(30);
+                JOptionPane.showMessageDialog(null, "Löysit baarista seuralaisen, loppuillasta ei kerrottavaa jälkipolville");
+                penaO.lisääEeppisyyttä(15);
+                        }
+            else{
+                penaO.lisääEeppisyyttä(10);
+                penaO.otaRahaa(50);
+                JOptionPane.showMessageDialog(null, "Vietit mukavan illan Brittiseurueen kanssa!");
+                
+                    
+                    }
+        
+
                 break;
             case 3:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
@@ -41,20 +67,24 @@ public class PenaThaimaaMetodi {
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 2:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 3:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 4:
 
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
@@ -69,16 +99,19 @@ public class PenaThaimaaMetodi {
             case 1:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
+                JOptionPane.showMessageDialog(null, "");
 
                 break;
             case 2:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
+                JOptionPane.showMessageDialog(null, "");
 
                 break;
             case 3:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
+                JOptionPane.showMessageDialog(null, "");
 
                 break;
 
@@ -94,22 +127,25 @@ public class PenaThaimaaMetodi {
             case 1:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
+                JOptionPane.showMessageDialog(null, "");
 
                 break;
             case 2:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
+                JOptionPane.showMessageDialog(null, "");
 
                 break;
             case 3:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
+                JOptionPane.showMessageDialog(null, "");
 
                 break;
             case 4:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
-
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
@@ -127,26 +163,31 @@ public class PenaThaimaaMetodi {
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 2:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 3:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 4:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 5:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
@@ -165,18 +206,22 @@ public class PenaThaimaaMetodi {
             case 1:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 2:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 3:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 4:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
@@ -192,21 +237,25 @@ public class PenaThaimaaMetodi {
                 penaO.otaRahaa(20);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 2:
                 penaO.otaRahaa(20);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 3:
                 penaO.otaRahaa(100);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 4:
                 penaO.otaRahaa(20);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
@@ -224,21 +273,25 @@ public class PenaThaimaaMetodi {
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 2:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 3:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 4:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
@@ -255,18 +308,22 @@ public class PenaThaimaaMetodi {
             case 1:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 2:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 3:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
             case 4:
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "");
                 break;
 
         }
