@@ -258,13 +258,13 @@ public class PenaThaimaaMetodi {
                 penaO.otaRahaa(50);
                 penaO.lisääEeppisyyttä(5);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "Huhu mikä ilta...Huippu dj ja mikä meno!!");
+                JOptionPane.showMessageDialog(null, "Huhhuh mikä ilta...Huippu dj ja mikä meno!!");
                 break;
             case 2:
                 penaO.otaRahaa(150);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "Epic night! Muistikuvat vähissä ja rahaa paloi.");
+                JOptionPane.showMessageDialog(null, "Epic night! Muistikuvat vähissä ja rahaa paloi!");
                 break;
             case 3:
                 penaO.otaRahaa(100);
@@ -276,9 +276,10 @@ public class PenaThaimaaMetodi {
                 }else{
                 JOptionPane.showMessageDialog(null, "Vietit huikean illan strippiklubilla monen naisen seurassa. Nice! ");
                 penaO.lisääEeppisyyttä(5);
-                break;
-                
+                           
                 }
+                 break;
+                 
             case 4:
                 penaO.otaRahaa(20);
                 penaO.lisääEeppisyyttä(1);
@@ -302,31 +303,48 @@ public class PenaThaimaaMetodi {
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                JOptionPane.showMessageDialog(null, "Kiertelit mitä erikoisempia museoita, mikä päivä!");
                 break;
             case 2:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                JOptionPane.showMessageDialog(null, "Melkoinen show! En ollut uskoa silmiäni showta katsoessa. 9+!");
                 break;
             case 3:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                JOptionPane.showMessageDialog(null, "Mikä thainyrkkeily ilta, nyrkit heilu ja posket tummu!");
                 break;
             case 4:
                 penaO.otaRahaa(1);
                 penaO.lisääEeppisyyttä(1);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                JOptionPane.showMessageDialog(null, "Vietit mitä mainioimman risteilyn syöden lomasi parhaan menun!");
                 break;
+                
+            case 5:
+                penaO.otaRahaa(1);
+                penaO.lisääEeppisyyttä(1);
+                penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "Vietit upean päivän joki risteilyllä syöden, juoden ja leväten. nyt jaksaa taas bailata!");
+                break;
+                
+            case 6:
+                penaO.otaRahaa(1);
+                penaO.lisääEeppisyyttä(1);
+                penaO.lisääAika(1);
+                JOptionPane.showMessageDialog(null, "Vietit elämyksellisen päivän syöttäen norsuja sekä ratsastaen niillä, norsu rodeota unohtamatta! ");
+                break;
+            default: JOptionPane.showMessageDialog(null," Väärä valinta!");
 
         }
     }
 
     public void seuralainen(int valinta, PenaOlio penaO) {
+        int random;
+    
         /*+"1. Valitsen seuralaiseksi paikallisen naisen \n"
          +"2. Valitsen seuralaiseksi Jessican (eurooppalainen, vaalea prinsessa )  \n"
          +"3. Valitsen seuralaiseksi Irinan (amerikkalainen, tumma ja tulinen)\n"
@@ -335,27 +353,39 @@ public class PenaThaimaaMetodi {
          */
         switch (valinta) {
             case 1:
-                penaO.lisääEeppisyyttä(1);
+                penaO.lisääEeppisyyttä(10);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi seuralaisen! NICE! \n"
+                +"Päädyit valitsemaan itsellesi paikallisen naisen.");
                 break;
             case 2:
-                penaO.lisääEeppisyyttä(1);
+                penaO.lisääEeppisyyttä(10);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi saeuralaisen! NICE! \n "
+                +"Päädyit vaaleaan ruotsalais syntyiseen kaunottareen nimeltä Jessica.");
                 break;
             case 3:
-                penaO.lisääEeppisyyttä(1);
+                penaO.lisääEeppisyyttä(10);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi saeuralaisen! NICE! \n"
+                +"Päädyit tummaan ja tuliseen amerikkalaistaustaiseen Irinaan.");
                 break;
-            case 4:
-                penaO.lisääEeppisyyttä(1);
+            case 4:                       
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "");
+                random = (1 + (int) (Math.random() * 3));
+                if (random == 1){
+                JOptionPane.showMessageDialog(null, "Valitsit sokkona seuralaisen ja tämän seurauksena sait seuralaiseksi ladyboyn. HUPS!! Mikä emämoka Pena! ");
+                penaO.vähennäEeppisyyttä(10);
+                }else {
+                   JOptionPane.showMessageDialog(null,"Päätit hakea itsellesi loman ajaksi saeuralaisen! NICE! \n"
+                +"Päädyit valitsemaan seuralaisen sokkona! Sait seuralaiseksi kauniin naisen.");
+                penaO.lisääEeppisyyttä(15);   
+                }
                 break;
+            default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
+                
 
         }
-
     }
-}
+    }
+
