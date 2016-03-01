@@ -196,7 +196,7 @@ public class PenaSuomiMetodit {
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
         }
     }
-        public void viromenu(int valinta, PenaOlio penaO){
+        public void viro(int valinta, PenaOlio penaO){
         int random;
 /*
 1. Ekana Tax Freehen ostamaan viinat, hytissä alottelua, sitten tanssimaan baariin ja iskemään naisia!
@@ -206,7 +206,7 @@ public class PenaSuomiMetodit {
 5. Kasinolla pitää käydä!
 */
         switch (valinta){
-            case 1: penaO.otaRahaa(300);
+            case 1: penaO.otaRahaa(180);
                 random = (1 + (int) (Math.random()*9));
             if (random ==9){
                 penaO.lisääEeppisyyttä(30);
@@ -216,14 +216,14 @@ public class PenaSuomiMetodit {
             if (random ==1){
                 penaO.vähennäEeppisyyttä(20);
                 JOptionPane.showMessageDialog(null, "Hyvin aloitettu ilta jatkui laiva selliin, jonkun "
-                + "aloitettu tappelun kanssasi ");
+                + "aloitettua tappelun kanssasi ");
             }else{
                 penaO.lisääEeppisyyttä(10);
                 JOptionPane.showMessageDialog(null, "Perusristeily, ei mitään erikoista tapahtunut");
             }
             penaO.lisääAika(1);
             break;
-            case 2: penaO.otaRahaa(100);
+            case 2: penaO.otaRahaa(300);
             random = (1 + (int) (Math.random()*9));
             if (random ==5){
                 penaO.vähennäEeppisyyttä(22);
@@ -260,7 +260,7 @@ public class PenaSuomiMetodit {
             if (random ==6){
             JOptionPane.showMessageDialog(null, "Voitto kotiin kasinolla. Rahaa tuli kivasti ");
             penaO.lisääRahaa(300);
-            penaO.lisääEeppisyyttä(201);
+            penaO.lisääEeppisyyttä(24);
             }else{
             JOptionPane.showMessageDialog(null," Olihan toi ok käydä pelailemassa");
             penaO.lisääEeppisyyttä(15);
@@ -270,4 +270,13 @@ public class PenaSuomiMetodit {
                 
     }
 }
+        public void hieronta(int valinta, PenaOlio penaO){
+            /*"Millaisen hierronnan otat? \n"
+                + "1. Thai-hierontaan ajattelin mennä \n"
+                + "2. Johonkin ihan perus kokovartalohierontaan \n"
+                + "3. Kaveri antaa niskahieronnan";*/
+            switch (valinta){
+                
+            }
+        }
 }
