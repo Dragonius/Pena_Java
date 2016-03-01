@@ -424,6 +424,7 @@ public class PenaSuomiMetodit {
                    JOptionPane.showMessageDialog(null, "Vanhus huomasi murtautumisyrityksesi ja soitti poliisit. Onneksi pääsit karkuun.");
                
                }
+               penaO.lisääAika(1);
                    break;
                case 5: random = (1 + (int) (Math.random()*2));
                if (random == 2){
@@ -435,6 +436,7 @@ public class PenaSuomiMetodit {
                    penaO.vähennäEeppisyyttä(10);
                    JOptionPane.showMessageDialog(null, "Sait itse turpaasi ja sinulta ryöstettiin 70e");
                }
+               penaO.lisääAika(1);
                    break;
                default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
            }
