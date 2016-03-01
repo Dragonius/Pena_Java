@@ -229,12 +229,12 @@ public class PenaSuomiMetodit {
             penaO.lisääAika(1);
             break;
             case 2: penaO.otaRahaa(300);
-            random = (1 + (int) (Math.random()*9));
+            random = (1 + (int) (Math.random()*5));
             if (random ==5){
-                penaO.lisääEeppisyyttä(19);
+                penaO.lisääEeppisyyttä(13);
                 JOptionPane.showMessageDialog(null, "Loppuillasta tiesi vei putkaan! Mitäs läksit!");
             }else{
-                penaO.lisääEeppisyyttä(25);
+                penaO.lisääEeppisyyttä(20);
                 JOptionPane.showMessageDialog(null, "Hyvä meno oli! Melkosessa humalassa tuli oltua.");
             }
             penaO.lisääAika(1);
