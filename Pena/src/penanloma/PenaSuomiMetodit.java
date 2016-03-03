@@ -96,6 +96,7 @@ public class PenaSuomiMetodit {
           case 4: penaO.lisääEeppisyyttä(3);
           penaO.lisääAika(1);
           JOptionPane.showMessageDialog(null, "Luit hyvää kirjaa koko päivän.");
+          break;
           default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
                   
       }
