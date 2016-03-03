@@ -87,15 +87,16 @@ public class PenaThaimaa {
                     + "Lomasi on kestänyt " + penaO.getAika() + " päivää \n"
                     + "1. Suuntaan altaalle! \n"
                     + "2. Tutustun alueeseen! \n"
-                    + "3. Vuokraan kulkuvälineen! \n "
+                    + "3. Vuokraan kulkuvälineen! \n"
                     + "4. Lähden syömään! \n"
-                    + "5. Lähden hierontaan! \n "
-                    + "6. Lähden kuntosalille! \n "
-                    + "7. Lähden yöelämään! \n "
-                    + "8. Lähden retkelle! \n "
+                    + "5. Lähden hierontaan! \n"
+                    + "6. Lähden kuntosalille! \n"
+                    + "7. Lähden yöelämään! \n"
+                    + "8. Lähden retkelle! \n"
                     + "9. Päätän lähteä hakemaan seuralaista loman ajaksi. (maksullinen nainen 200€) \n"
-                    + "10. Otan lainan (+ 500€). \n "
-                    + "11. Näytä rahatilanne.");
+                    + "10. Otan lainan (+ 500€). \n"
+                    + "11. Näytä rahatilanne. \n"
+                    + "12. Lopeta loma.");
 
             valinta = Integer.parseInt(lukuStr);
             switch (valinta) {
@@ -162,6 +163,9 @@ public class PenaThaimaa {
 
                 case 11:
                     JOptionPane.showMessageDialog(null, "Rahatilanne:" + penaO.getRahat());
+                    break;
+                case 12: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
+                    penaO.setRahat(0);  
                     break;
 
                 default:
