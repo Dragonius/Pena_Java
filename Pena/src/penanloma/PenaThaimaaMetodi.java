@@ -300,40 +300,40 @@ public class PenaThaimaaMetodi {
          +"6. Lähden norsusafarille. \n ";*/
         switch (valinta) {
             case 1:
-                penaO.otaRahaa(1);
-                penaO.lisääEeppisyyttä(1);
+                penaO.otaRahaa(50);
+                penaO.lisääEeppisyyttä(3);
                 penaO.lisääAika(1);
                 JOptionPane.showMessageDialog(null, "Kiertelit mitä erikoisempia museoita, mikä päivä!");
                 break;
             case 2:
-                penaO.otaRahaa(1);
-                penaO.lisääEeppisyyttä(1);
+                penaO.otaRahaa(70);
+                penaO.lisääEeppisyyttä(5);
                 penaO.lisääAika(1);
                 JOptionPane.showMessageDialog(null, "Melkoinen show! En ollut uskoa silmiäni showta katsoessa. 9+!");
                 break;
             case 3:
-                penaO.otaRahaa(1);
-                penaO.lisääEeppisyyttä(1);
+                penaO.otaRahaa(40);
+                penaO.lisääEeppisyyttä(6);
                 penaO.lisääAika(1);
                 JOptionPane.showMessageDialog(null, "Mikä thainyrkkeily ilta, nyrkit heilu ja posket tummu!");
                 break;
             case 4:
-                penaO.otaRahaa(1);
-                penaO.lisääEeppisyyttä(1);
+                penaO.otaRahaa(100);
+                penaO.lisääEeppisyyttä(8);
                 penaO.lisääAika(1);
                 JOptionPane.showMessageDialog(null, "Vietit mitä mainioimman risteilyn syöden lomasi parhaan menun!");
                 break;
                 
             case 5:
-                penaO.otaRahaa(1);
-                penaO.lisääEeppisyyttä(1);
+                penaO.otaRahaa(50);
+                penaO.lisääEeppisyyttä(5);
                 penaO.lisääAika(1);
                 JOptionPane.showMessageDialog(null, "Vietit upean päivän joki risteilyllä syöden, juoden ja leväten. nyt jaksaa taas bailata!");
                 break;
                 
             case 6:
-                penaO.otaRahaa(1);
-                penaO.lisääEeppisyyttä(1);
+                penaO.otaRahaa(50);
+                penaO.lisääEeppisyyttä(7);
                 penaO.lisääAika(1);
                 JOptionPane.showMessageDialog(null, "Vietit elämyksellisen päivän syöttäen norsuja sekä ratsastaen niillä, norsu rodeota unohtamatta! ");
                 break;
