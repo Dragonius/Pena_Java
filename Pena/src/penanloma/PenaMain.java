@@ -14,9 +14,11 @@ public class PenaMain {
     public static void main(String[] args) {
         //Muuttujat Ja alkuteksti
         int valinta;
-        String lukuStr;
+        String lukuStr="na";
         PenaOlio penaO = new PenaOlio();
-        PenaKontrolleri kontrolleri = new PenaKontrolleri();
+        PenaKontrolleri kontrolleri = new PenaKontrolleri();   
+        while (true) {
+            
         String alkuTervehdys = "Hei Pena! Oletko valmis viettämään huikean loman? \n"
                 + "Sinulla on kymmenen päivää aikaa viettää mahdollisimman mahtava loma. \n"
                 + "Saat käyttörahaa alkuun 1000€, mutta voit ottaa kerran loman aikana\n "
@@ -32,20 +34,11 @@ public class PenaMain {
         //Alku tervehdys josta kutsutaan tarvittava olio.
         JOptionPane.showMessageDialog(null, alkuTervehdys);
         lukuStr = JOptionPane.showInputDialog(alkuvalinta);
+        /* Tarkista onko Annettu parametri muu kuin nulla ja jos on niin aja
+        Parseint, muuten mene suoraan else kohtaan 
+        */
+        if (lukuStr != null){
         
-        /* Tarkista onko Annettu String Null, jos on
-        niin tulosta Rhat sekä eepisyys, Pitää vielä muuttaa metodiksi -jari 
-        */
-        while(lukuStr == null ){
-            
-        /*JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
-        + "Eeppisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
-        + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
-        System.exit(0);*/
-/*      
-        lukuStr = JOptionPane.showInputDialog(alkuvalinta);
-        */
-        }
         valinta = Integer.parseInt(lukuStr); 
         
         //TEMPUT
@@ -62,14 +55,17 @@ public class PenaMain {
             
         }
         
-
+    
         
         //OUTPUT
-        //Lopputulostus, Statikkaa? kuinka paljon rahaa ja kuinka eepisyys oli?
- /*       JOptionPane.showMessageDialog(null, "Rahaa jäi "+ penaO.getRahat() + "\n"
-        + "Eepisyys oli tosiaan: "  + penaO.getEeppisyys() + "\n" 
-        + "Aikaa tosiaankin jäi vielä " + penaO.getAika() + "\n");
-*/
-        
         }
+        /* Jos lukuStr on Null niin tule tänne ja keskeytä ohjelma sekä 
+        tulosta statiikka
+        */
+        else {
+        kontrolleri.loppu(penaO);
+        System.exit(0);
+        }
+    }
+    }
 }
