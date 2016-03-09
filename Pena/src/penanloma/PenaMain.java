@@ -51,7 +51,7 @@ public class PenaMain {
             kontrolleri.loppu(penaO);
             break;
             default: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
-
+            System.exit(0);
             
         }
         
