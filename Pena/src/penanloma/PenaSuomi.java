@@ -169,7 +169,7 @@ public class PenaSuomi {
         
 
         }
-        // niin kauan kuin penan aika on vähemmän kuin 10 ja raha on enemän kuin 0
+        // niin kauan kuin penan aika on vähemmän kuin 10 ja raha on enemmän kuin 0
         while(penaO.getAika()<10 && penaO.getRahat()>0);
         
         
