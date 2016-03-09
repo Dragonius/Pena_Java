@@ -88,7 +88,7 @@ public class PenaThaimaaMetodi {
             case 3:
                 penaO.otaRahaa(5);
                 penaO.lisääEeppisyyttä(1);
-                JOptionPane.showMessageDialog(null, "Ostit maukkaan kana kebabin katukojusta");
+                JOptionPane.showMessageDialog(null, "Ostit maukkaan kana-kebabin katukojusta");
                 break;
             case 4:
                 JOptionPane.showMessageDialog(null, "Tutustuit alueeseen ja päätit palata hotellille");
@@ -139,7 +139,7 @@ public class PenaThaimaaMetodi {
             case 1:
                 penaO.otaRahaa(10);
                 penaO.vähennäEeppisyyttä(1);
-                JOptionPane.showMessageDialog(null, "Kävit mäkkärissä syömässä pikaruokaa, totesit valinnan huonoksi jo tilatessassi");
+                JOptionPane.showMessageDialog(null, "Kävit mäkkärissä syömässä pikaruokaa, totesit valinnan huonoksi jo tilatessasi");
 
                 break;
             case 2:
@@ -271,8 +271,9 @@ public class PenaThaimaaMetodi {
                 penaO.lisääAika(1);
                 random = (1 + (int) (Math.random() * 3));
                 if (random == 1){
-                JOptionPane.showMessageDialog(null,"Jouduit huijatuksi strippiklubilla, ");
+                JOptionPane.showMessageDialog(null,"Jouduit huijatuksi strippiklubilla, heräsit alusvaatteisillasi kadulta ja otit taksin hotellille. ");
                 penaO.vähennäEeppisyyttä(5);
+                penaO.otaRahaa(50);
                 }else{
                 JOptionPane.showMessageDialog(null, "Vietit huikean illan strippiklubilla monen naisen seurassa. Nice! ");
                 penaO.lisääEeppisyyttä(5);
