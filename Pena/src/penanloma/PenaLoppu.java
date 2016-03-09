@@ -23,6 +23,7 @@ public class PenaLoppu {
                 + "Rahaa jäi: "+penaO.getRahat()+"e \n"
                 + "Loman eeppisyys: "+loppueeppisyys+"% \n"
                 + "\n Hyvää alkavaa työviikkoa!");
+        System.exit(0);
         
         
     }
