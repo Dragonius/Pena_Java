@@ -378,7 +378,7 @@ public class PenaThaimaaMetodi {
                 JOptionPane.showMessageDialog(null, "Valitsit sokkona seuralaisen ja tämän seurauksena sait seuralaiseksi ladyboyn. HUPS!! Mikä emämoka Pena! ");
                 penaO.vähennäEeppisyyttä(15);
                 }else {
-                   JOptionPane.showMessageDialog(null,"Päätit hakea itsellesi loman ajaksi saeuralaisen! NICE! \n"
+                   JOptionPane.showMessageDialog(null,"Päätit hakea itsellesi loman ajaksi seuralaisen! NICE! \n"
                 +"Päädyit valitsemaan seuralaisen sokkona! Sait seuralaiseksi kauniin naisen.");
                 penaO.lisääEeppisyyttä(25);   
                 }
