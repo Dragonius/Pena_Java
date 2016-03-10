@@ -3,14 +3,7 @@ package penanloma;
 import javax.swing.JOptionPane;
 
 public class PenaMain {
-    /*
-    Pitäiskö ajankäyttöä muuttaa niin ettei kaikki aktiviteetit jotka vie aikaa vie aina päivää vaan 
-    vaikka tunnin tarkkuudella ja jotenkin (en ajatellu niin pitkälle) lisätään yöt yms siihen.
     
-    Loma loppuu vaan siihen, että ohjelma sulkeutuu. ei saatesanoja eikä "tulosta"
-    eeppisyyden jne osalta.
-    */
-
     public static void main(String[] args) {
         //Muuttujat Ja alkuteksti
         int valinta;
@@ -28,8 +21,7 @@ public class PenaMain {
                 + "1. Haluan jäädä Suomeen. \n"
                 + "2. Vietän loman Thaimaassa! \n"
                 + "3. Perutaan koko loma.";
-        /*String lopetustilasto = "Aikaa kului " + penaO.getAika() +"\n"
-                + "ja Rahaa jäi " + penaO.getRahat() +"\n";*/
+        
         //INPUT
         //Alku tervehdys josta kutsutaan tarvittava olio.
         JOptionPane.showMessageDialog(null, alkuTervehdys);
@@ -41,7 +33,7 @@ public class PenaMain {
         
         valinta = Integer.parseInt(lukuStr); 
         
-        //TEMPUT
+       
         //Valinta mikä päättää minkä olio käynistetään kontrollerin kautta.
         switch(valinta){
             case 1: kontrolleri.suomi(penaO);
