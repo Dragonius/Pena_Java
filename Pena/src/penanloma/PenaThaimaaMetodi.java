@@ -354,21 +354,21 @@ public class PenaThaimaaMetodi {
          */
         switch (valinta) {
             case 1:
-                penaO.lisääEeppisyyttä(10);
+                penaO.lisääEeppisyyttä(20);
                 penaO.lisääAika(1);
                 JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi seuralaisen! NICE! \n"
                 +"Päädyit valitsemaan itsellesi paikallisen naisen.");
                 break;
             case 2:
-                penaO.lisääEeppisyyttä(10);
+                penaO.lisääEeppisyyttä(20);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi saeuralaisen! NICE! \n "
+                JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi seuralaisen! NICE! \n "
                 +"Päädyit vaaleaan ruotsalais syntyiseen kaunottareen nimeltä Jessica.");
                 break;
             case 3:
-                penaO.lisääEeppisyyttä(10);
+                penaO.lisääEeppisyyttä(20);
                 penaO.lisääAika(1);
-                JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi saeuralaisen! NICE! \n"
+                JOptionPane.showMessageDialog(null, "Päätit hakea itsellesi loman ajaksi seuralaisen! NICE! \n"
                 +"Päädyit tummaan ja tuliseen amerikkalaistaustaiseen Irinaan.");
                 break;
             case 4:                       
@@ -376,11 +376,11 @@ public class PenaThaimaaMetodi {
                 random = (1 + (int) (Math.random() * 3));
                 if (random == 1){
                 JOptionPane.showMessageDialog(null, "Valitsit sokkona seuralaisen ja tämän seurauksena sait seuralaiseksi ladyboyn. HUPS!! Mikä emämoka Pena! ");
-                penaO.vähennäEeppisyyttä(10);
+                penaO.vähennäEeppisyyttä(15);
                 }else {
                    JOptionPane.showMessageDialog(null,"Päätit hakea itsellesi loman ajaksi saeuralaisen! NICE! \n"
                 +"Päädyit valitsemaan seuralaisen sokkona! Sait seuralaiseksi kauniin naisen.");
-                penaO.lisääEeppisyyttä(15);   
+                penaO.lisääEeppisyyttä(25);   
                 }
                 break;
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
