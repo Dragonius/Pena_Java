@@ -165,7 +165,7 @@ public class PenaThaimaa {
                     JOptionPane.showMessageDialog(null, "Rahatilanne:" + penaO.getRahat());
                     break;
                 case 12: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
-                    penaO.setRahat(0);  
+                    penaO.setAika(11);  
                     break;
 
                 default:
