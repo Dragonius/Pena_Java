@@ -158,9 +158,8 @@ public class PenaSuomi {
             
             case 11: JOptionPane.showMessageDialog(null,"Rahatilanne: " + penaO.getRahat());
             break;
-            case 12: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
-            penaO.setAika(11);
-
+            case 12: JOptionPane.showMessageDialog(null, "Lopetit loman kesken, Maanantaina duuniin!");
+            kontrolleri.loppu(penaO);
             break;
             
             default: JOptionPane.showMessageDialog(null, "Väärä valinta!");
