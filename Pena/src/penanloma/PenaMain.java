@@ -42,9 +42,10 @@ public class PenaMain {
             case 2: kontrolleri.thaimaa(penaO);
             kontrolleri.loppu(penaO);
             break;
-            default: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
+            case 3: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
             System.exit(0);
-            
+            break;
+            default: System.exit(0);
         }
         
     
