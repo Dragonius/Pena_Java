@@ -164,8 +164,8 @@ public class PenaThaimaa {
                 case 11:
                     JOptionPane.showMessageDialog(null, "Rahatilanne:" + penaO.getRahat());
                     break;
-                case 12: JOptionPane.showMessageDialog(null, "Loma peruttu, Maanantaina duuniin!");
-                    penaO.setAika(11);  
+                case 12: JOptionPane.showMessageDialog(null, "Loma lopetettu,Suomeen takaisin ja Maanantaina duuniin!");
+                    kontrolleri.loppu(penaO);
                     break;
 
                 default:
